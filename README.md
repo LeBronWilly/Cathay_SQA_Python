@@ -11,3 +11,9 @@
 4. Test Case4. 之後提款 700 元, pytest 預期會接到 RuntimeError
 
 
+##避免Deprecation Warning
+```Python
+pytest -W ignore::DeprecationWarning
+```
+
+
