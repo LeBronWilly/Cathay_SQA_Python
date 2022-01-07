@@ -2,7 +2,9 @@
 import pytest
 import requests
 
-headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0'}
+# 設定請求表頭(Request Headers)資訊
+headers = {"User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"}
+
 
 #################################
 # Test Case1. 請嘗試使用 Python 抓取 https://cathay-ds-test.s3-ap-northeast-1.amazonaws.com/user_info?userid=A123456789, 並利用 assert 確認 http response status code 為 200

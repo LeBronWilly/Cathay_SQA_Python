@@ -19,6 +19,7 @@ class TestCoreSuites():
 # Test Case2. 下一步提款 500 元, 確認帳戶總金額為 600 元
 # Test Case3. 假設銀行年利率是10%, 經過一年之後確認帳戶餘額為660元
 # Test Case4. 之後提款 700 元, pytest 預期會接到 RuntimeError
+# (Bonus) 請運用 github action 或其他 CI services 自動執行測試並提供連結
 #
 #################################
     customer = Customer(name="Test User", account="100-1100")
