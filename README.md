@@ -16,6 +16,7 @@ https://github.com/LeBronWilly/Cathay_SQA_Python/tree/main/tests/Problem%202
 
 ## Run Pytest
 ```Command Line Interface
+cls
 cd /d D:
 cd D:\GitHub\Cathay_SQA_Python
 pytest -W ignore::DeprecationWarning -v
