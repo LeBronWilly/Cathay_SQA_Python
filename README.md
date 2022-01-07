@@ -16,7 +16,26 @@ https://github.com/LeBronWilly/Cathay_SQA_Python/tree/main/tests/Problem%202
 
 ## Run Pytest
 ```Command Line Interface
+cls
 cd /d D:
 cd D:\GitHub\Cathay_SQA_Python
 pytest -W ignore::DeprecationWarning -v
+
 ```
+
+## Some References
+1. https://myapollo.com.tw/zh-tw/pytest/
+2. https://blog.cti.app/archives/20220
+3. https://zwindr.blogspot.com/2019/01/python-pytest.html
+4. https://www.796t.com/article.php?id=164187
+5. https://iter01.com/504335.html
+6. https://docs.pytest.org/en/latest/how-to/fixtures.html
+7. https://stackoverflow.com/questions/39395731/testing-class-methods-with-pytest/39395889
+8. https://kirin.idv.tw/python-decimal-module-tutorial/
+9. https://www.maxlist.xyz/2019/12/12/python-oop/
+10. https://www.learncodewithmike.com/2020/01/python-inheritance.html
+11. https://stackoverflow.com/questions/40710094/how-to-suppress-py-test-internal-deprecation-warnings
+12. https://github.com/LeBronWilly/Basic_Web_Crawler/blob/master/Web%20Scraper.ipynb
+13. https://stackoverflow.com/questions/55944961/python-403-access-denied-when-post-request
+14. https://ithelp.ithome.com.tw/articles/10191165
+15. https://www.learncodewithmike.com/2020/09/7-tips-to-avoid-getting-blocked-while-scraping.html
