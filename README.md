@@ -20,4 +20,5 @@ cls
 cd /d D:
 cd D:\GitHub\Cathay_SQA_Python
 pytest -W ignore::DeprecationWarning -v
+
 ```
