@@ -32,4 +32,4 @@ jobs:
     - name: Test with pytest
       run: |
         pip install pytest
-        pytest --alluredir=allure-results --browser remote
+        pytest -W ignore::DeprecationWarning -v
