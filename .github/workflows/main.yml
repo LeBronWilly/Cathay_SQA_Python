@@ -1,6 +1,10 @@
 name: Pytest Bonus
 
-on: [push]
+on: 
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
   build:
@@ -22,7 +26,10 @@ jobs:
         pip install -r requirements-dev.txt
         pip install -r requirements-lib.txt
         pip install .
+    - name: Install plugin
+      run: |
+        pip install pytest-github-actions-annotate-failures
     - name: Test with pytest
       run: |
         pip install pytest
-        pytest
+        pytest --alluredir=allure-results --browser remote
