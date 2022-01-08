@@ -41,3 +41,6 @@ pytest -W ignore::DeprecationWarning -v
 15. https://www.learncodewithmike.com/2020/09/7-tips-to-avoid-getting-blocked-while-scraping.html
 16. https://stackoverflow.com/questions/60298449/github-action-with-pytest
 17. https://www.linkedin.com/pulse/test-automation-how-build-cicd-pipeline-using-pytest-nir-tal/
+18. https://kknews.cc/zh-tw/code/zr5km6a.html
+19. https://blog.dennisokeeffe.com/blog/2021-08-08-pytest-with-github-actions
+20. https://iter01.com/608520.html
