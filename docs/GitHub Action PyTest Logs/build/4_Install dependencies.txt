@@ -1,0 +1,190 @@
+2022-01-08T03:09:44.0731104Z ##[group]Run python -m pip install --upgrade pip
+2022-01-08T03:09:44.0731905Z [36;1mpython -m pip install --upgrade pip[0m
+2022-01-08T03:09:44.0732490Z [36;1mpip install pipenv[0m
+2022-01-08T03:09:44.0733004Z [36;1mpipenv install --dev[0m
+2022-01-08T03:09:44.0733620Z [36;1mpip install -r requirements.txt[0m
+2022-01-08T03:09:44.0734362Z [36;1mpip install -r requirements-dev.txt[0m
+2022-01-08T03:09:44.0735132Z [36;1mpip install -r requirements-lib.txt[0m
+2022-01-08T03:09:44.0735747Z [36;1mpip install .[0m
+2022-01-08T03:09:44.0783294Z shell: /usr/bin/bash -e {0}
+2022-01-08T03:09:44.0783680Z env:
+2022-01-08T03:09:44.0784195Z   pythonLocation: /opt/hostedtoolcache/Python/3.7.12/x64
+2022-01-08T03:09:44.0784709Z ##[endgroup]
+2022-01-08T03:09:45.2754996Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (21.3.1)
+2022-01-08T03:09:46.7273263Z Collecting pipenv
+2022-01-08T03:09:46.7960613Z   Downloading pipenv-2021.11.23-py2.py3-none-any.whl (3.6 MB)
+2022-01-08T03:09:46.9124844Z Requirement already satisfied: setuptools>=36.2.1 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pipenv) (47.1.0)
+2022-01-08T03:09:47.0936791Z Collecting virtualenv
+2022-01-08T03:09:47.1095849Z   Downloading virtualenv-20.13.0-py2.py3-none-any.whl (6.5 MB)
+2022-01-08T03:09:47.2578507Z Collecting virtualenv-clone>=0.2.5
+2022-01-08T03:09:47.2695518Z   Downloading virtualenv_clone-0.5.7-py3-none-any.whl (6.6 kB)
+2022-01-08T03:09:47.3183557Z Collecting certifi
+2022-01-08T03:09:47.3333812Z   Downloading certifi-2021.10.8-py2.py3-none-any.whl (149 kB)
+2022-01-08T03:09:47.3406428Z Requirement already satisfied: pip>=18.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pipenv) (21.3.1)
+2022-01-08T03:09:47.4056868Z Collecting platformdirs<3,>=2
+2022-01-08T03:09:47.4191659Z   Downloading platformdirs-2.4.1-py3-none-any.whl (14 kB)
+2022-01-08T03:09:47.4598027Z Collecting distlib<1,>=0.3.1
+2022-01-08T03:09:47.4748522Z   Downloading distlib-0.3.4-py2.py3-none-any.whl (461 kB)
+2022-01-08T03:09:47.5324104Z Collecting filelock<4,>=3.2
+2022-01-08T03:09:47.5449365Z   Downloading filelock-3.4.2-py3-none-any.whl (9.9 kB)
+2022-01-08T03:09:47.6618245Z Collecting importlib-metadata>=0.12
+2022-01-08T03:09:47.6732210Z   Downloading importlib_metadata-4.10.0-py3-none-any.whl (17 kB)
+2022-01-08T03:09:47.7172351Z Collecting six<2,>=1.9.0
+2022-01-08T03:09:47.7292510Z   Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+2022-01-08T03:09:47.8300911Z Collecting zipp>=0.5
+2022-01-08T03:09:47.8441883Z   Downloading zipp-3.7.0-py3-none-any.whl (5.3 kB)
+2022-01-08T03:09:47.8885711Z Collecting typing-extensions>=3.6.4
+2022-01-08T03:09:47.9001369Z   Downloading typing_extensions-4.0.1-py3-none-any.whl (22 kB)
+2022-01-08T03:09:48.0825138Z Installing collected packages: zipp, typing-extensions, six, platformdirs, importlib-metadata, filelock, distlib, virtualenv-clone, virtualenv, certifi, pipenv
+2022-01-08T03:09:50.5175772Z Successfully installed certifi-2021.10.8 distlib-0.3.4 filelock-3.4.2 importlib-metadata-4.10.0 pipenv-2021.11.23 platformdirs-2.4.1 six-1.16.0 typing-extensions-4.0.1 virtualenv-20.13.0 virtualenv-clone-0.5.7 zipp-3.7.0
+2022-01-08T03:09:52.1439699Z Creating a virtualenv for this project...
+2022-01-08T03:09:52.1443162Z Pipfile: /home/runner/work/Cathay_SQA_Python/Cathay_SQA_Python/Pipfile
+2022-01-08T03:09:52.1730551Z Using /usr/bin/python3 (3.8.10) to create virtualenv...
+2022-01-08T03:09:52.9578389Z created virtual environment CPython3.8.10.final.0-64 in 596ms
+2022-01-08T03:09:52.9581211Z   creator CPython3Posix(dest=/home/runner/.local/share/virtualenvs/Cathay_SQA_Python-Qt5ksLO-, clear=False, no_vcs_ignore=False, global=False)
+2022-01-08T03:09:52.9583566Z   seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/runner/.local/share/virtualenv)
+2022-01-08T03:09:52.9585122Z     added seed packages: pip==21.3.1, setuptools==60.2.0, wheel==0.37.1
+2022-01-08T03:09:52.9588718Z   activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+2022-01-08T03:09:52.9592430Z 
+2022-01-08T03:09:52.9592917Z 
+2022-01-08T03:09:52.9593703Z Successfully created virtual environment!
+2022-01-08T03:09:53.9284326Z Virtualenv location: /home/runner/.local/share/virtualenvs/Cathay_SQA_Python-Qt5ksLO-
+2022-01-08T03:09:53.9291451Z requirements.txt found, instead of Pipfile! Converting...
+2022-01-08T03:09:54.0414233Z 
+2022-01-08T03:09:54.0414954Z Success!
+2022-01-08T03:09:54.0421902Z Warning: Your Pipfile now contains pinned versions, if your requirements.txt did. 
+2022-01-08T03:09:54.0423100Z We recommend updating your Pipfile to specify the "*" version, instead.
+2022-01-08T03:09:54.0431174Z Pipfile.lock not found, creating...
+2022-01-08T03:09:54.0444690Z Locking [dev-packages] dependencies...
+2022-01-08T03:09:54.0451677Z Locking [packages] dependencies...
+2022-01-08T03:09:54.0461206Z Updated Pipfile.lock (db4242)!
+2022-01-08T03:09:54.0648080Z Installing dependencies from Pipfile.lock (db4242)...
+2022-01-08T03:09:54.0675974Z To activate this project's virtualenv, run pipenv shell.
+2022-01-08T03:09:54.0677199Z Alternatively, run a command inside the virtualenv with pipenv run.
+2022-01-08T03:09:57.1125894Z Collecting pytest
+2022-01-08T03:09:57.1597133Z   Downloading pytest-6.2.5-py3-none-any.whl (280 kB)
+2022-01-08T03:09:57.2373284Z Collecting pytest-cov
+2022-01-08T03:09:57.2495059Z   Downloading pytest_cov-3.0.0-py3-none-any.whl (20 kB)
+2022-01-08T03:09:57.3256742Z Collecting pytest-xdist
+2022-01-08T03:09:57.3397365Z   Downloading pytest_xdist-2.5.0-py3-none-any.whl (41 kB)
+2022-01-08T03:09:57.4014233Z Collecting pytest-bdd
+2022-01-08T03:09:57.4148160Z   Downloading pytest_bdd-5.0.0-py3-none-any.whl (38 kB)
+2022-01-08T03:09:57.4727257Z Collecting bandit
+2022-01-08T03:09:57.4885011Z   Downloading bandit-1.7.1-py3-none-any.whl (113 kB)
+2022-01-08T03:09:57.5530117Z Collecting twine
+2022-01-08T03:09:57.5679670Z   Downloading twine-3.7.1-py3-none-any.whl (35 kB)
+2022-01-08T03:09:57.6503165Z Collecting wheel
+2022-01-08T03:09:57.6628172Z   Downloading wheel-0.37.1-py2.py3-none-any.whl (35 kB)
+2022-01-08T03:09:57.6682037Z Requirement already satisfied: setuptools in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from -r requirements-dev.txt (line 8)) (47.1.0)
+2022-01-08T03:09:57.7075024Z Collecting iniconfig
+2022-01-08T03:09:57.7197495Z   Downloading iniconfig-1.1.1-py2.py3-none-any.whl (5.0 kB)
+2022-01-08T03:09:57.7666290Z Collecting pluggy<2.0,>=0.12
+2022-01-08T03:09:57.7787647Z   Downloading pluggy-1.0.0-py2.py3-none-any.whl (13 kB)
+2022-01-08T03:09:57.8237867Z Collecting attrs>=19.2.0
+2022-01-08T03:09:57.8404660Z   Downloading attrs-21.4.0-py2.py3-none-any.whl (60 kB)
+2022-01-08T03:09:57.8982448Z Collecting py>=1.8.2
+2022-01-08T03:09:57.9119058Z   Downloading py-1.11.0-py2.py3-none-any.whl (98 kB)
+2022-01-08T03:09:57.9500829Z Collecting toml
+2022-01-08T03:09:57.9628871Z   Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+2022-01-08T03:09:58.0245087Z Collecting packaging
+2022-01-08T03:09:58.0372838Z   Downloading packaging-21.3-py3-none-any.whl (40 kB)
+2022-01-08T03:09:58.0440507Z Requirement already satisfied: importlib-metadata>=0.12 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest->-r requirements-dev.txt (line 1)) (4.10.0)
+2022-01-08T03:09:58.7143205Z Collecting coverage[toml]>=5.2.1
+2022-01-08T03:09:58.7385815Z   Downloading coverage-6.2-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (213 kB)
+2022-01-08T03:09:58.8192097Z Collecting pytest-forked
+2022-01-08T03:09:58.8312102Z   Downloading pytest_forked-1.4.0-py3-none-any.whl (4.9 kB)
+2022-01-08T03:09:58.8731224Z Collecting execnet>=1.1
+2022-01-08T03:09:58.8856821Z   Downloading execnet-1.9.0-py2.py3-none-any.whl (39 kB)
+2022-01-08T03:09:58.9386000Z Collecting glob2
+2022-01-08T03:09:58.9519242Z   Downloading glob2-0.7.tar.gz (10 kB)
+2022-01-08T03:09:58.9635326Z   Preparing metadata (setup.py): started
+2022-01-08T03:09:59.2992660Z   Preparing metadata (setup.py): finished with status 'done'
+2022-01-08T03:09:59.3484623Z Collecting Mako
+2022-01-08T03:09:59.3615120Z   Downloading Mako-1.1.6-py2.py3-none-any.whl (75 kB)
+2022-01-08T03:09:59.3921366Z Collecting parse-type
+2022-01-08T03:09:59.4048995Z   Downloading parse_type-0.5.2-py2.py3-none-any.whl (32 kB)
+2022-01-08T03:09:59.4467069Z Collecting parse
+2022-01-08T03:09:59.4614160Z   Downloading parse-1.19.0.tar.gz (30 kB)
+2022-01-08T03:09:59.4704971Z   Preparing metadata (setup.py): started
+2022-01-08T03:09:59.6944889Z   Preparing metadata (setup.py): finished with status 'done'
+2022-01-08T03:09:59.8007105Z Collecting GitPython>=1.0.1
+2022-01-08T03:09:59.8153709Z   Downloading GitPython-3.1.25-py3-none-any.whl (180 kB)
+2022-01-08T03:09:59.9757971Z Collecting PyYAML>=5.3.1
+2022-01-08T03:09:59.9902249Z   Downloading PyYAML-6.0-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (596 kB)
+2022-01-08T03:10:00.0765973Z Collecting stevedore>=1.20.0
+2022-01-08T03:10:00.0902524Z   Downloading stevedore-3.5.0-py3-none-any.whl (49 kB)
+2022-01-08T03:10:00.1409681Z Collecting requests-toolbelt!=0.9.0,>=0.8.0
+2022-01-08T03:10:00.1529168Z   Downloading requests_toolbelt-0.9.1-py2.py3-none-any.whl (54 kB)
+2022-01-08T03:10:00.2018485Z Collecting readme-renderer>=21.0
+2022-01-08T03:10:00.2148404Z   Downloading readme_renderer-32.0-py3-none-any.whl (16 kB)
+2022-01-08T03:10:00.3525602Z Collecting tqdm>=4.14
+2022-01-08T03:10:00.3646036Z   Downloading tqdm-4.62.3-py2.py3-none-any.whl (76 kB)
+2022-01-08T03:10:00.4054888Z Collecting pkginfo>=1.8.1
+2022-01-08T03:10:00.4224237Z   Downloading pkginfo-1.8.2-py2.py3-none-any.whl (26 kB)
+2022-01-08T03:10:00.4708797Z Collecting colorama>=0.4.3
+2022-01-08T03:10:00.4824321Z   Downloading colorama-0.4.4-py2.py3-none-any.whl (16 kB)
+2022-01-08T03:10:00.5885580Z Collecting requests>=2.20
+2022-01-08T03:10:00.6004319Z   Downloading requests-2.27.1-py2.py3-none-any.whl (63 kB)
+2022-01-08T03:10:00.7193857Z Collecting keyring>=15.1
+2022-01-08T03:10:00.7326603Z   Downloading keyring-23.5.0-py3-none-any.whl (33 kB)
+2022-01-08T03:10:00.7683007Z Collecting rfc3986>=1.4.0
+2022-01-08T03:10:00.7801226Z   Downloading rfc3986-1.5.0-py2.py3-none-any.whl (31 kB)
+2022-01-08T03:10:00.8727150Z Collecting tomli
+2022-01-08T03:10:00.8863324Z   Downloading tomli-2.0.0-py3-none-any.whl (12 kB)
+2022-01-08T03:10:00.9338078Z Collecting gitdb<5,>=4.0.1
+2022-01-08T03:10:00.9465784Z   Downloading gitdb-4.0.9-py3-none-any.whl (63 kB)
+2022-01-08T03:10:00.9537084Z Requirement already satisfied: typing-extensions>=3.7.4.3 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from GitPython>=1.0.1->bandit->-r requirements-dev.txt (line 5)) (4.0.1)
+2022-01-08T03:10:00.9791992Z Requirement already satisfied: zipp>=0.5 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from importlib-metadata>=0.12->pytest->-r requirements-dev.txt (line 1)) (3.7.0)
+2022-01-08T03:10:01.0317250Z Collecting SecretStorage>=3.2
+2022-01-08T03:10:01.0443304Z   Downloading SecretStorage-3.3.1-py3-none-any.whl (15 kB)
+2022-01-08T03:10:01.0998285Z Collecting jeepney>=0.4.2
+2022-01-08T03:10:01.1153538Z   Downloading jeepney-0.7.1-py3-none-any.whl (54 kB)
+2022-01-08T03:10:01.2137890Z Collecting bleach>=2.1.0
+2022-01-08T03:10:01.2266898Z   Downloading bleach-4.1.0-py2.py3-none-any.whl (157 kB)
+2022-01-08T03:10:01.3030716Z Collecting Pygments>=2.5.1
+2022-01-08T03:10:01.3239187Z   Downloading Pygments-2.11.2-py3-none-any.whl (1.1 MB)
+2022-01-08T03:10:01.3945304Z Collecting docutils>=0.13.1
+2022-01-08T03:10:01.4078376Z   Downloading docutils-0.18.1-py2.py3-none-any.whl (570 kB)
+2022-01-08T03:10:01.4811097Z Collecting idna<4,>=2.5
+2022-01-08T03:10:01.4935230Z   Downloading idna-3.3-py3-none-any.whl (61 kB)
+2022-01-08T03:10:01.5747481Z Collecting urllib3<1.27,>=1.21.1
+2022-01-08T03:10:01.5879992Z   Downloading urllib3-1.26.8-py2.py3-none-any.whl (138 kB)
+2022-01-08T03:10:01.6419520Z Collecting charset-normalizer~=2.0.0
+2022-01-08T03:10:01.6559695Z   Downloading charset_normalizer-2.0.10-py3-none-any.whl (39 kB)
+2022-01-08T03:10:01.6617223Z Requirement already satisfied: certifi>=2017.4.17 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from requests>=2.20->twine->-r requirements-dev.txt (line 6)) (2021.10.8)
+2022-01-08T03:10:01.8001098Z Collecting pbr!=2.1.0,>=2.0.0
+2022-01-08T03:10:01.8152033Z   Downloading pbr-5.8.0-py2.py3-none-any.whl (112 kB)
+2022-01-08T03:10:01.9696487Z Collecting MarkupSafe>=0.9.2
+2022-01-08T03:10:01.9898094Z   Downloading MarkupSafe-2.0.1-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (31 kB)
+2022-01-08T03:10:02.1038514Z Collecting pyparsing!=3.0.5,>=2.0.2
+2022-01-08T03:10:02.1169454Z   Downloading pyparsing-3.0.6-py3-none-any.whl (97 kB)
+2022-01-08T03:10:02.1482904Z Requirement already satisfied: six>=1.11 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from parse-type->pytest-bdd->-r requirements-dev.txt (line 4)) (1.16.0)
+2022-01-08T03:10:02.2252142Z Collecting webencodings
+2022-01-08T03:10:02.2368077Z   Downloading webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+2022-01-08T03:10:02.3106707Z Collecting smmap<6,>=3.0.1
+2022-01-08T03:10:02.3226727Z   Downloading smmap-5.0.0-py3-none-any.whl (24 kB)
+2022-01-08T03:10:03.0725213Z Collecting cryptography>=2.0
+2022-01-08T03:10:03.0843457Z   Downloading cryptography-36.0.1-cp36-abi3-manylinux_2_24_x86_64.whl (3.6 MB)
+2022-01-08T03:10:03.6236094Z Collecting cffi>=1.12
+2022-01-08T03:10:03.6373569Z   Downloading cffi-1.15.0-cp37-cp37m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (427 kB)
+2022-01-08T03:10:03.7013521Z Collecting pycparser
+2022-01-08T03:10:03.7140937Z   Downloading pycparser-2.21-py2.py3-none-any.whl (118 kB)
+2022-01-08T03:10:03.7631893Z Using legacy 'setup.py install' for glob2, since package 'wheel' is not installed.
+2022-01-08T03:10:03.7634413Z Using legacy 'setup.py install' for parse, since package 'wheel' is not installed.
+2022-01-08T03:10:04.0463930Z Installing collected packages: pycparser, pyparsing, cffi, webencodings, urllib3, toml, smmap, py, pluggy, packaging, jeepney, iniconfig, idna, cryptography, charset-normalizer, attrs, tomli, SecretStorage, requests, pytest, Pygments, pbr, parse, MarkupSafe, gitdb, docutils, coverage, bleach, tqdm, stevedore, rfc3986, requests-toolbelt, readme-renderer, PyYAML, pytest-forked, pkginfo, parse-type, Mako, keyring, glob2, GitPython, execnet, colorama, wheel, twine, pytest-xdist, pytest-cov, pytest-bdd, bandit
+2022-01-08T03:10:06.0015136Z     Running setup.py install for parse: started
+2022-01-08T03:10:06.3191504Z     Running setup.py install for parse: finished with status 'done'
+2022-01-08T03:10:07.2746010Z     Running setup.py install for glob2: started
+2022-01-08T03:10:07.5437227Z     Running setup.py install for glob2: finished with status 'done'
+2022-01-08T03:10:07.9298362Z Successfully installed GitPython-3.1.25 Mako-1.1.6 MarkupSafe-2.0.1 PyYAML-6.0 Pygments-2.11.2 SecretStorage-3.3.1 attrs-21.4.0 bandit-1.7.1 bleach-4.1.0 cffi-1.15.0 charset-normalizer-2.0.10 colorama-0.4.4 coverage-6.2 cryptography-36.0.1 docutils-0.18.1 execnet-1.9.0 gitdb-4.0.9 glob2-0.7 idna-3.3 iniconfig-1.1.1 jeepney-0.7.1 keyring-23.5.0 packaging-21.3 parse-1.19.0 parse-type-0.5.2 pbr-5.8.0 pkginfo-1.8.2 pluggy-1.0.0 py-1.11.0 pycparser-2.21 pyparsing-3.0.6 pytest-6.2.5 pytest-bdd-5.0.0 pytest-cov-3.0.0 pytest-forked-1.4.0 pytest-xdist-2.5.0 readme-renderer-32.0 requests-2.27.1 requests-toolbelt-0.9.1 rfc3986-1.5.0 smmap-5.0.0 stevedore-3.5.0 toml-0.10.2 tomli-2.0.0 tqdm-4.62.3 twine-3.7.1 urllib3-1.26.8 webencodings-0.5.1 wheel-0.37.1
+2022-01-08T03:10:09.7966692Z Processing /home/runner/work/Cathay_SQA_Python/Cathay_SQA_Python
+2022-01-08T03:10:09.7972228Z   Preparing metadata (setup.py): started
+2022-01-08T03:10:10.0986771Z   Preparing metadata (setup.py): finished with status 'done'
+2022-01-08T03:10:10.1079879Z Building wheels for collected packages: python-ci-gitlab
+2022-01-08T03:10:10.1264336Z   Building wheel for python-ci-gitlab (setup.py): started
+2022-01-08T03:10:10.4128129Z   Building wheel for python-ci-gitlab (setup.py): finished with status 'done'
+2022-01-08T03:10:10.4136814Z   Created wheel for python-ci-gitlab: filename=python_ci_gitlab-1.0.0-py2.py3-none-any.whl size=4949 sha256=e5a06751b81058a27e71b3383d571caf9643e036d2d608d034756e834782d499
+2022-01-08T03:10:10.4139639Z   Stored in directory: /tmp/pip-ephem-wheel-cache-fhs48l3l/wheels/1d/2c/38/cbf64f9d378c25b219368dd470e2eaeaee47740667bc05ba2a
+2022-01-08T03:10:10.4173299Z Successfully built python-ci-gitlab
+2022-01-08T03:10:10.7294240Z Installing collected packages: python-ci-gitlab
+2022-01-08T03:10:10.7609972Z Successfully installed python-ci-gitlab-1.0.0

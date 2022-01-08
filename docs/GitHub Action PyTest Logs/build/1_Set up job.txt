@@ -1,0 +1,36 @@
+2022-01-08T03:09:39.8711086Z Current runner version: '2.285.1'
+2022-01-08T03:09:39.8746937Z ##[group]Operating System
+2022-01-08T03:09:39.8747927Z Ubuntu
+2022-01-08T03:09:39.8748467Z 20.04.3
+2022-01-08T03:09:39.8748905Z LTS
+2022-01-08T03:09:39.8749645Z ##[endgroup]
+2022-01-08T03:09:39.8750223Z ##[group]Virtual Environment
+2022-01-08T03:09:39.8750949Z Environment: ubuntu-20.04
+2022-01-08T03:09:39.8751593Z Version: 20211219.1
+2022-01-08T03:09:39.8752632Z Included Software: https://github.com/actions/virtual-environments/blob/ubuntu20/20211219.1/images/linux/Ubuntu2004-README.md
+2022-01-08T03:09:39.8754289Z Image Release: https://github.com/actions/virtual-environments/releases/tag/ubuntu20%2F20211219.1
+2022-01-08T03:09:39.8755320Z ##[endgroup]
+2022-01-08T03:09:39.8756000Z ##[group]Virtual Environment Provisioner
+2022-01-08T03:09:39.8756765Z 1.0.0.0-main-20211214-1
+2022-01-08T03:09:39.8757334Z ##[endgroup]
+2022-01-08T03:09:39.8759660Z ##[group]GITHUB_TOKEN Permissions
+2022-01-08T03:09:39.8761035Z Actions: write
+2022-01-08T03:09:39.8761610Z Checks: write
+2022-01-08T03:09:39.8762430Z Contents: write
+2022-01-08T03:09:39.8763022Z Deployments: write
+2022-01-08T03:09:39.8763699Z Discussions: write
+2022-01-08T03:09:39.8764321Z Issues: write
+2022-01-08T03:09:39.8764883Z Metadata: read
+2022-01-08T03:09:39.8765503Z Packages: write
+2022-01-08T03:09:39.8766071Z Pages: write
+2022-01-08T03:09:39.8766708Z PullRequests: write
+2022-01-08T03:09:39.8767399Z RepositoryProjects: write
+2022-01-08T03:09:39.8768175Z SecurityEvents: write
+2022-01-08T03:09:39.8768844Z Statuses: write
+2022-01-08T03:09:39.8769517Z ##[endgroup]
+2022-01-08T03:09:39.8772711Z Secret source: Actions
+2022-01-08T03:09:39.8773633Z Prepare workflow directory
+2022-01-08T03:09:39.9419058Z Prepare all required actions
+2022-01-08T03:09:39.9430691Z Getting action download info
+2022-01-08T03:09:40.1624525Z Download action repository 'actions/checkout@v2' (SHA:ec3a7ce113134d7a93b817d10a8272cb61118579)
+2022-01-08T03:09:42.4416628Z Download action repository 'actions/setup-python@v1' (SHA:152ba7c4dd6521b8e9c93f72d362ce03bf6c4f20)

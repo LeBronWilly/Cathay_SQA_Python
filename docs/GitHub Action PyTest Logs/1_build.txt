@@ -1,0 +1,482 @@
+2022-01-08T03:09:34.3256918Z Found online and idle hosted runner in the current repository's organization account that matches the required labels: 'ubuntu-latest'
+2022-01-08T03:09:34.3808939Z Waiting for a Hosted runner in the 'organization' to pick this job...
+2022-01-08T03:09:34.6250149Z Job is waiting for a hosted runner to come online.
+2022-01-08T03:09:37.8365642Z Job is about to start running on the hosted runner: Hosted Agent (hosted)
+2022-01-08T03:09:39.8711680Z Current runner version: '2.285.1'
+2022-01-08T03:09:39.8746982Z ##[group]Operating System
+2022-01-08T03:09:39.8747939Z Ubuntu
+2022-01-08T03:09:39.8748475Z 20.04.3
+2022-01-08T03:09:39.8748911Z LTS
+2022-01-08T03:09:39.8749655Z ##[endgroup]
+2022-01-08T03:09:39.8750230Z ##[group]Virtual Environment
+2022-01-08T03:09:39.8750957Z Environment: ubuntu-20.04
+2022-01-08T03:09:39.8751601Z Version: 20211219.1
+2022-01-08T03:09:39.8752639Z Included Software: https://github.com/actions/virtual-environments/blob/ubuntu20/20211219.1/images/linux/Ubuntu2004-README.md
+2022-01-08T03:09:39.8754298Z Image Release: https://github.com/actions/virtual-environments/releases/tag/ubuntu20%2F20211219.1
+2022-01-08T03:09:39.8755328Z ##[endgroup]
+2022-01-08T03:09:39.8756008Z ##[group]Virtual Environment Provisioner
+2022-01-08T03:09:39.8756774Z 1.0.0.0-main-20211214-1
+2022-01-08T03:09:39.8757341Z ##[endgroup]
+2022-01-08T03:09:39.8759672Z ##[group]GITHUB_TOKEN Permissions
+2022-01-08T03:09:39.8761052Z Actions: write
+2022-01-08T03:09:39.8761797Z Checks: write
+2022-01-08T03:09:39.8762438Z Contents: write
+2022-01-08T03:09:39.8763100Z Deployments: write
+2022-01-08T03:09:39.8763706Z Discussions: write
+2022-01-08T03:09:39.8764328Z Issues: write
+2022-01-08T03:09:39.8764890Z Metadata: read
+2022-01-08T03:09:39.8765510Z Packages: write
+2022-01-08T03:09:39.8766078Z Pages: write
+2022-01-08T03:09:39.8766715Z PullRequests: write
+2022-01-08T03:09:39.8767407Z RepositoryProjects: write
+2022-01-08T03:09:39.8768182Z SecurityEvents: write
+2022-01-08T03:09:39.8768851Z Statuses: write
+2022-01-08T03:09:39.8769527Z ##[endgroup]
+2022-01-08T03:09:39.8772741Z Secret source: Actions
+2022-01-08T03:09:39.8773645Z Prepare workflow directory
+2022-01-08T03:09:39.9419097Z Prepare all required actions
+2022-01-08T03:09:39.9430746Z Getting action download info
+2022-01-08T03:09:40.1624614Z Download action repository 'actions/checkout@v2' (SHA:ec3a7ce113134d7a93b817d10a8272cb61118579)
+2022-01-08T03:09:42.4416676Z Download action repository 'actions/setup-python@v1' (SHA:152ba7c4dd6521b8e9c93f72d362ce03bf6c4f20)
+2022-01-08T03:09:43.0909532Z ##[group]Run actions/checkout@v2
+2022-01-08T03:09:43.0910502Z with:
+2022-01-08T03:09:43.0911009Z   repository: LeBronWilly/Cathay_SQA_Python
+2022-01-08T03:09:43.0912015Z   token: ***
+2022-01-08T03:09:43.0912415Z   ssh-strict: true
+2022-01-08T03:09:43.0912949Z   persist-credentials: true
+2022-01-08T03:09:43.0913452Z   clean: true
+2022-01-08T03:09:43.0913850Z   fetch-depth: 1
+2022-01-08T03:09:43.0914258Z   lfs: false
+2022-01-08T03:09:43.0914655Z   submodules: false
+2022-01-08T03:09:43.0915080Z ##[endgroup]
+2022-01-08T03:09:43.3897869Z Syncing repository: LeBronWilly/Cathay_SQA_Python
+2022-01-08T03:09:43.3899462Z ##[group]Getting Git version info
+2022-01-08T03:09:43.3900657Z Working directory is '/home/runner/work/Cathay_SQA_Python/Cathay_SQA_Python'
+2022-01-08T03:09:43.3901974Z [command]/usr/bin/git version
+2022-01-08T03:09:43.4059036Z git version 2.34.1
+2022-01-08T03:09:43.9520169Z ##[endgroup]
+2022-01-08T03:09:43.9521627Z Deleting the contents of '/home/runner/work/Cathay_SQA_Python/Cathay_SQA_Python'
+2022-01-08T03:09:43.9524280Z ##[group]Initializing the repository
+2022-01-08T03:09:43.9525067Z [command]/usr/bin/git init /home/runner/work/Cathay_SQA_Python/Cathay_SQA_Python
+2022-01-08T03:09:43.9526206Z hint: Using 'master' as the name for the initial branch. This default branch name
+2022-01-08T03:09:43.9527107Z hint: is subject to change. To configure the initial branch name to use in all
+2022-01-08T03:09:43.9528074Z hint: of your new repositories, which will suppress this warning, call:
+2022-01-08T03:09:43.9529093Z hint: 
+2022-01-08T03:09:43.9530039Z hint: 	git config --global init.defaultBranch <name>
+2022-01-08T03:09:43.9530633Z hint: 
+2022-01-08T03:09:43.9531490Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2022-01-08T03:09:43.9532495Z hint: 'development'. The just-created branch can be renamed via this command:
+2022-01-08T03:09:43.9533117Z hint: 
+2022-01-08T03:09:43.9533639Z hint: 	git branch -m <name>
+2022-01-08T03:09:43.9534728Z Initialized empty Git repository in /home/runner/work/Cathay_SQA_Python/Cathay_SQA_Python/.git/
+2022-01-08T03:09:43.9535971Z [command]/usr/bin/git remote add origin https://github.com/LeBronWilly/Cathay_SQA_Python
+2022-01-08T03:09:43.9537360Z ##[endgroup]
+2022-01-08T03:09:43.9538508Z ##[group]Disabling automatic garbage collection
+2022-01-08T03:09:43.9539413Z [command]/usr/bin/git config --local gc.auto 0
+2022-01-08T03:09:43.9540503Z ##[endgroup]
+2022-01-08T03:09:43.9543277Z ##[group]Setting up auth
+2022-01-08T03:09:43.9544262Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2022-01-08T03:09:43.9545884Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2022-01-08T03:09:43.9547528Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2022-01-08T03:09:43.9549890Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2022-01-08T03:09:43.9551804Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2022-01-08T03:09:43.9553160Z ##[endgroup]
+2022-01-08T03:09:43.9554173Z ##[group]Fetching the repository
+2022-01-08T03:09:43.9555754Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +9f687cd34f0353f9955bba47e35c8e9dbb49b8de:refs/remotes/origin/main
+2022-01-08T03:09:43.9557068Z remote: Enumerating objects: 45, done.        
+2022-01-08T03:09:43.9557642Z remote: Counting objects:   2% (1/45)        
+2022-01-08T03:09:43.9558190Z remote: Counting objects:   4% (2/45)        
+2022-01-08T03:09:43.9558735Z remote: Counting objects:   6% (3/45)        
+2022-01-08T03:09:43.9559264Z remote: Counting objects:   8% (4/45)        
+2022-01-08T03:09:43.9559955Z remote: Counting objects:  11% (5/45)        
+2022-01-08T03:09:43.9560492Z remote: Counting objects:  13% (6/45)        
+2022-01-08T03:09:43.9561031Z remote: Counting objects:  15% (7/45)        
+2022-01-08T03:09:43.9561573Z remote: Counting objects:  17% (8/45)        
+2022-01-08T03:09:43.9562097Z remote: Counting objects:  20% (9/45)        
+2022-01-08T03:09:43.9562642Z remote: Counting objects:  22% (10/45)        
+2022-01-08T03:09:43.9563167Z remote: Counting objects:  24% (11/45)        
+2022-01-08T03:09:43.9563705Z remote: Counting objects:  26% (12/45)        
+2022-01-08T03:09:43.9564237Z remote: Counting objects:  28% (13/45)        
+2022-01-08T03:09:43.9564778Z remote: Counting objects:  31% (14/45)        
+2022-01-08T03:09:43.9565315Z remote: Counting objects:  33% (15/45)        
+2022-01-08T03:09:43.9569533Z remote: Counting objects:  35% (16/45)        
+2022-01-08T03:09:43.9570137Z remote: Counting objects:  37% (17/45)        
+2022-01-08T03:09:43.9570701Z remote: Counting objects:  40% (18/45)        
+2022-01-08T03:09:43.9571310Z remote: Counting objects:  42% (19/45)        
+2022-01-08T03:09:43.9571897Z remote: Counting objects:  44% (20/45)        
+2022-01-08T03:09:43.9573000Z remote: Counting objects:  46% (21/45)        
+2022-01-08T03:09:43.9573584Z remote: Counting objects:  48% (22/45)        
+2022-01-08T03:09:43.9574148Z remote: Counting objects:  51% (23/45)        
+2022-01-08T03:09:43.9574726Z remote: Counting objects:  53% (24/45)        
+2022-01-08T03:09:43.9575289Z remote: Counting objects:  55% (25/45)        
+2022-01-08T03:09:43.9575870Z remote: Counting objects:  57% (26/45)        
+2022-01-08T03:09:43.9576449Z remote: Counting objects:  60% (27/45)        
+2022-01-08T03:09:43.9577018Z remote: Counting objects:  62% (28/45)        
+2022-01-08T03:09:43.9577593Z remote: Counting objects:  64% (29/45)        
+2022-01-08T03:09:43.9578158Z remote: Counting objects:  66% (30/45)        
+2022-01-08T03:09:43.9578740Z remote: Counting objects:  68% (31/45)        
+2022-01-08T03:09:43.9579513Z remote: Counting objects:  71% (32/45)        
+2022-01-08T03:09:43.9580078Z remote: Counting objects:  73% (33/45)        
+2022-01-08T03:09:43.9580656Z remote: Counting objects:  75% (34/45)        
+2022-01-08T03:09:43.9581218Z remote: Counting objects:  77% (35/45)        
+2022-01-08T03:09:43.9582000Z remote: Counting objects:  80% (36/45)        
+2022-01-08T03:09:43.9582587Z remote: Counting objects:  82% (37/45)        
+2022-01-08T03:09:43.9583148Z remote: Counting objects:  84% (38/45)        
+2022-01-08T03:09:43.9583724Z remote: Counting objects:  86% (39/45)        
+2022-01-08T03:09:43.9584305Z remote: Counting objects:  88% (40/45)        
+2022-01-08T03:09:43.9584919Z remote: Counting objects:  91% (41/45)        
+2022-01-08T03:09:43.9585506Z remote: Counting objects:  93% (42/45)        
+2022-01-08T03:09:43.9586074Z remote: Counting objects:  95% (43/45)        
+2022-01-08T03:09:43.9586651Z remote: Counting objects:  97% (44/45)        
+2022-01-08T03:09:43.9587215Z remote: Counting objects: 100% (45/45)        
+2022-01-08T03:09:43.9587839Z remote: Counting objects: 100% (45/45), done.        
+2022-01-08T03:09:43.9588489Z remote: Compressing objects:   2% (1/35)        
+2022-01-08T03:09:43.9589110Z remote: Compressing objects:   5% (2/35)        
+2022-01-08T03:09:43.9590063Z remote: Compressing objects:   8% (3/35)        
+2022-01-08T03:09:43.9590686Z remote: Compressing objects:  11% (4/35)        
+2022-01-08T03:09:43.9591317Z remote: Compressing objects:  14% (5/35)        
+2022-01-08T03:09:43.9591955Z remote: Compressing objects:  17% (6/35)        
+2022-01-08T03:09:43.9592569Z remote: Compressing objects:  20% (7/35)        
+2022-01-08T03:09:43.9593207Z remote: Compressing objects:  22% (8/35)        
+2022-01-08T03:09:43.9593821Z remote: Compressing objects:  25% (9/35)        
+2022-01-08T03:09:43.9594456Z remote: Compressing objects:  28% (10/35)        
+2022-01-08T03:09:43.9595077Z remote: Compressing objects:  31% (11/35)        
+2022-01-08T03:09:43.9595714Z remote: Compressing objects:  34% (12/35)        
+2022-01-08T03:09:43.9596482Z remote: Compressing objects:  37% (13/35)        
+2022-01-08T03:09:43.9597111Z remote: Compressing objects:  40% (14/35)        
+2022-01-08T03:09:43.9597743Z remote: Compressing objects:  42% (15/35)        
+2022-01-08T03:09:43.9598359Z remote: Compressing objects:  45% (16/35)        
+2022-01-08T03:09:43.9598995Z remote: Compressing objects:  48% (17/35)        
+2022-01-08T03:09:43.9599624Z remote: Compressing objects:  51% (18/35)        
+2022-01-08T03:09:43.9600242Z remote: Compressing objects:  54% (19/35)        
+2022-01-08T03:09:43.9600876Z remote: Compressing objects:  57% (20/35)        
+2022-01-08T03:09:43.9601488Z remote: Compressing objects:  60% (21/35)        
+2022-01-08T03:09:43.9602113Z remote: Compressing objects:  62% (22/35)        
+2022-01-08T03:09:43.9602725Z remote: Compressing objects:  65% (23/35)        
+2022-01-08T03:09:43.9603348Z remote: Compressing objects:  68% (24/35)        
+2022-01-08T03:09:43.9603973Z remote: Compressing objects:  71% (25/35)        
+2022-01-08T03:09:43.9604602Z remote: Compressing objects:  74% (26/35)        
+2022-01-08T03:09:43.9605236Z remote: Compressing objects:  77% (27/35)        
+2022-01-08T03:09:43.9605850Z remote: Compressing objects:  80% (28/35)        
+2022-01-08T03:09:43.9609452Z remote: Compressing objects:  82% (29/35)        
+2022-01-08T03:09:43.9610155Z remote: Compressing objects:  85% (30/35)        
+2022-01-08T03:09:43.9610771Z remote: Compressing objects:  88% (31/35)        
+2022-01-08T03:09:43.9611402Z remote: Compressing objects:  91% (32/35)        
+2022-01-08T03:09:43.9612018Z remote: Compressing objects:  94% (33/35)        
+2022-01-08T03:09:43.9612649Z remote: Compressing objects:  97% (34/35)        
+2022-01-08T03:09:43.9613276Z remote: Compressing objects: 100% (35/35)        
+2022-01-08T03:09:43.9613921Z remote: Compressing objects: 100% (35/35), done.        
+2022-01-08T03:09:43.9615113Z remote: Total 45 (delta 5), reused 28 (delta 1), pack-reused 0        
+2022-01-08T03:09:43.9623796Z From https://github.com/LeBronWilly/Cathay_SQA_Python
+2022-01-08T03:09:43.9625770Z  * [new ref]         9f687cd34f0353f9955bba47e35c8e9dbb49b8de -> origin/main
+2022-01-08T03:09:43.9678861Z ##[endgroup]
+2022-01-08T03:09:43.9680044Z ##[group]Determining the checkout info
+2022-01-08T03:09:43.9681232Z ##[endgroup]
+2022-01-08T03:09:43.9682263Z ##[group]Checking out the ref
+2022-01-08T03:09:43.9683562Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2022-01-08T03:09:43.9774638Z Switched to a new branch 'main'
+2022-01-08T03:09:43.9776289Z Branch 'main' set up to track remote branch 'main' from 'origin'.
+2022-01-08T03:09:43.9778497Z ##[endgroup]
+2022-01-08T03:09:43.9811992Z [command]/usr/bin/git log -1 --format='%H'
+2022-01-08T03:09:43.9847805Z '9f687cd34f0353f9955bba47e35c8e9dbb49b8de'
+2022-01-08T03:09:44.0046125Z ##[group]Run actions/setup-python@v1
+2022-01-08T03:09:44.0046670Z with:
+2022-01-08T03:09:44.0047159Z   python-version: 3.7
+2022-01-08T03:09:44.0047661Z   architecture: x64
+2022-01-08T03:09:44.0049143Z ##[endgroup]
+2022-01-08T03:09:44.0629114Z Successfully setup CPython (3.7.12)
+2022-01-08T03:09:44.0731150Z ##[group]Run python -m pip install --upgrade pip
+2022-01-08T03:09:44.0731911Z [36;1mpython -m pip install --upgrade pip[0m
+2022-01-08T03:09:44.0732496Z [36;1mpip install pipenv[0m
+2022-01-08T03:09:44.0733010Z [36;1mpipenv install --dev[0m
+2022-01-08T03:09:44.0733626Z [36;1mpip install -r requirements.txt[0m
+2022-01-08T03:09:44.0734368Z [36;1mpip install -r requirements-dev.txt[0m
+2022-01-08T03:09:44.0735138Z [36;1mpip install -r requirements-lib.txt[0m
+2022-01-08T03:09:44.0735753Z [36;1mpip install .[0m
+2022-01-08T03:09:44.0783312Z shell: /usr/bin/bash -e {0}
+2022-01-08T03:09:44.0783686Z env:
+2022-01-08T03:09:44.0784201Z   pythonLocation: /opt/hostedtoolcache/Python/3.7.12/x64
+2022-01-08T03:09:44.0784714Z ##[endgroup]
+2022-01-08T03:09:45.2755158Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (21.3.1)
+2022-01-08T03:09:46.7273461Z Collecting pipenv
+2022-01-08T03:09:46.7960977Z   Downloading pipenv-2021.11.23-py2.py3-none-any.whl (3.6 MB)
+2022-01-08T03:09:46.9125151Z Requirement already satisfied: setuptools>=36.2.1 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pipenv) (47.1.0)
+2022-01-08T03:09:47.0936963Z Collecting virtualenv
+2022-01-08T03:09:47.1095950Z   Downloading virtualenv-20.13.0-py2.py3-none-any.whl (6.5 MB)
+2022-01-08T03:09:47.2578676Z Collecting virtualenv-clone>=0.2.5
+2022-01-08T03:09:47.2695624Z   Downloading virtualenv_clone-0.5.7-py3-none-any.whl (6.6 kB)
+2022-01-08T03:09:47.3183602Z Collecting certifi
+2022-01-08T03:09:47.3333858Z   Downloading certifi-2021.10.8-py2.py3-none-any.whl (149 kB)
+2022-01-08T03:09:47.3406469Z Requirement already satisfied: pip>=18.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pipenv) (21.3.1)
+2022-01-08T03:09:47.4056950Z Collecting platformdirs<3,>=2
+2022-01-08T03:09:47.4191733Z   Downloading platformdirs-2.4.1-py3-none-any.whl (14 kB)
+2022-01-08T03:09:47.4598112Z Collecting distlib<1,>=0.3.1
+2022-01-08T03:09:47.4748708Z   Downloading distlib-0.3.4-py2.py3-none-any.whl (461 kB)
+2022-01-08T03:09:47.5324257Z Collecting filelock<4,>=3.2
+2022-01-08T03:09:47.5449467Z   Downloading filelock-3.4.2-py3-none-any.whl (9.9 kB)
+2022-01-08T03:09:47.6618351Z Collecting importlib-metadata>=0.12
+2022-01-08T03:09:47.6732289Z   Downloading importlib_metadata-4.10.0-py3-none-any.whl (17 kB)
+2022-01-08T03:09:47.7172513Z Collecting six<2,>=1.9.0
+2022-01-08T03:09:47.7292544Z   Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+2022-01-08T03:09:47.8300964Z Collecting zipp>=0.5
+2022-01-08T03:09:47.8441964Z   Downloading zipp-3.7.0-py3-none-any.whl (5.3 kB)
+2022-01-08T03:09:47.8885749Z Collecting typing-extensions>=3.6.4
+2022-01-08T03:09:47.9001432Z   Downloading typing_extensions-4.0.1-py3-none-any.whl (22 kB)
+2022-01-08T03:09:48.0825194Z Installing collected packages: zipp, typing-extensions, six, platformdirs, importlib-metadata, filelock, distlib, virtualenv-clone, virtualenv, certifi, pipenv
+2022-01-08T03:09:50.5175919Z Successfully installed certifi-2021.10.8 distlib-0.3.4 filelock-3.4.2 importlib-metadata-4.10.0 pipenv-2021.11.23 platformdirs-2.4.1 six-1.16.0 typing-extensions-4.0.1 virtualenv-20.13.0 virtualenv-clone-0.5.7 zipp-3.7.0
+2022-01-08T03:09:52.1439751Z Creating a virtualenv for this project...
+2022-01-08T03:09:52.1443197Z Pipfile: /home/runner/work/Cathay_SQA_Python/Cathay_SQA_Python/Pipfile
+2022-01-08T03:09:52.1730590Z Using /usr/bin/python3 (3.8.10) to create virtualenv...
+2022-01-08T03:09:52.9578443Z created virtual environment CPython3.8.10.final.0-64 in 596ms
+2022-01-08T03:09:52.9581226Z   creator CPython3Posix(dest=/home/runner/.local/share/virtualenvs/Cathay_SQA_Python-Qt5ksLO-, clear=False, no_vcs_ignore=False, global=False)
+2022-01-08T03:09:52.9583578Z   seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/runner/.local/share/virtualenv)
+2022-01-08T03:09:52.9585132Z     added seed packages: pip==21.3.1, setuptools==60.2.0, wheel==0.37.1
+2022-01-08T03:09:52.9589036Z   activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+2022-01-08T03:09:52.9592440Z 
+2022-01-08T03:09:52.9592924Z 
+2022-01-08T03:09:52.9593712Z Successfully created virtual environment!
+2022-01-08T03:09:53.9284383Z Virtualenv location: /home/runner/.local/share/virtualenvs/Cathay_SQA_Python-Qt5ksLO-
+2022-01-08T03:09:53.9291477Z requirements.txt found, instead of Pipfile! Converting...
+2022-01-08T03:09:54.0414289Z 
+2022-01-08T03:09:54.0414963Z Success!
+2022-01-08T03:09:54.0421918Z Warning: Your Pipfile now contains pinned versions, if your requirements.txt did. 
+2022-01-08T03:09:54.0423106Z We recommend updating your Pipfile to specify the "*" version, instead.
+2022-01-08T03:09:54.0431195Z Pipfile.lock not found, creating...
+2022-01-08T03:09:54.0444711Z Locking [dev-packages] dependencies...
+2022-01-08T03:09:54.0451695Z Locking [packages] dependencies...
+2022-01-08T03:09:54.0461225Z Updated Pipfile.lock (db4242)!
+2022-01-08T03:09:54.0648159Z Installing dependencies from Pipfile.lock (db4242)...
+2022-01-08T03:09:54.0676031Z To activate this project's virtualenv, run pipenv shell.
+2022-01-08T03:09:54.0677208Z Alternatively, run a command inside the virtualenv with pipenv run.
+2022-01-08T03:09:57.1125950Z Collecting pytest
+2022-01-08T03:09:57.1597183Z   Downloading pytest-6.2.5-py3-none-any.whl (280 kB)
+2022-01-08T03:09:57.2373342Z Collecting pytest-cov
+2022-01-08T03:09:57.2495113Z   Downloading pytest_cov-3.0.0-py3-none-any.whl (20 kB)
+2022-01-08T03:09:57.3256790Z Collecting pytest-xdist
+2022-01-08T03:09:57.3397411Z   Downloading pytest_xdist-2.5.0-py3-none-any.whl (41 kB)
+2022-01-08T03:09:57.4014277Z Collecting pytest-bdd
+2022-01-08T03:09:57.4148197Z   Downloading pytest_bdd-5.0.0-py3-none-any.whl (38 kB)
+2022-01-08T03:09:57.4727313Z Collecting bandit
+2022-01-08T03:09:57.4885061Z   Downloading bandit-1.7.1-py3-none-any.whl (113 kB)
+2022-01-08T03:09:57.5530169Z Collecting twine
+2022-01-08T03:09:57.5679720Z   Downloading twine-3.7.1-py3-none-any.whl (35 kB)
+2022-01-08T03:09:57.6503230Z Collecting wheel
+2022-01-08T03:09:57.6628204Z   Downloading wheel-0.37.1-py2.py3-none-any.whl (35 kB)
+2022-01-08T03:09:57.6682063Z Requirement already satisfied: setuptools in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from -r requirements-dev.txt (line 8)) (47.1.0)
+2022-01-08T03:09:57.7075063Z Collecting iniconfig
+2022-01-08T03:09:57.7197527Z   Downloading iniconfig-1.1.1-py2.py3-none-any.whl (5.0 kB)
+2022-01-08T03:09:57.7666347Z Collecting pluggy<2.0,>=0.12
+2022-01-08T03:09:57.7787694Z   Downloading pluggy-1.0.0-py2.py3-none-any.whl (13 kB)
+2022-01-08T03:09:57.8237917Z Collecting attrs>=19.2.0
+2022-01-08T03:09:57.8404705Z   Downloading attrs-21.4.0-py2.py3-none-any.whl (60 kB)
+2022-01-08T03:09:57.8982512Z Collecting py>=1.8.2
+2022-01-08T03:09:57.9119145Z   Downloading py-1.11.0-py2.py3-none-any.whl (98 kB)
+2022-01-08T03:09:57.9500866Z Collecting toml
+2022-01-08T03:09:57.9628906Z   Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+2022-01-08T03:09:58.0245168Z Collecting packaging
+2022-01-08T03:09:58.0372882Z   Downloading packaging-21.3-py3-none-any.whl (40 kB)
+2022-01-08T03:09:58.0440544Z Requirement already satisfied: importlib-metadata>=0.12 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest->-r requirements-dev.txt (line 1)) (4.10.0)
+2022-01-08T03:09:58.7143256Z Collecting coverage[toml]>=5.2.1
+2022-01-08T03:09:58.7385861Z   Downloading coverage-6.2-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (213 kB)
+2022-01-08T03:09:58.8192130Z Collecting pytest-forked
+2022-01-08T03:09:58.8312133Z   Downloading pytest_forked-1.4.0-py3-none-any.whl (4.9 kB)
+2022-01-08T03:09:58.8731263Z Collecting execnet>=1.1
+2022-01-08T03:09:58.8856860Z   Downloading execnet-1.9.0-py2.py3-none-any.whl (39 kB)
+2022-01-08T03:09:58.9386055Z Collecting glob2
+2022-01-08T03:09:58.9519303Z   Downloading glob2-0.7.tar.gz (10 kB)
+2022-01-08T03:09:58.9635373Z   Preparing metadata (setup.py): started
+2022-01-08T03:09:59.2992965Z   Preparing metadata (setup.py): finished with status 'done'
+2022-01-08T03:09:59.3484670Z Collecting Mako
+2022-01-08T03:09:59.3615151Z   Downloading Mako-1.1.6-py2.py3-none-any.whl (75 kB)
+2022-01-08T03:09:59.3921412Z Collecting parse-type
+2022-01-08T03:09:59.4049034Z   Downloading parse_type-0.5.2-py2.py3-none-any.whl (32 kB)
+2022-01-08T03:09:59.4467127Z Collecting parse
+2022-01-08T03:09:59.4614195Z   Downloading parse-1.19.0.tar.gz (30 kB)
+2022-01-08T03:09:59.4704999Z   Preparing metadata (setup.py): started
+2022-01-08T03:09:59.6944941Z   Preparing metadata (setup.py): finished with status 'done'
+2022-01-08T03:09:59.8007134Z Collecting GitPython>=1.0.1
+2022-01-08T03:09:59.8153736Z   Downloading GitPython-3.1.25-py3-none-any.whl (180 kB)
+2022-01-08T03:09:59.9758035Z Collecting PyYAML>=5.3.1
+2022-01-08T03:09:59.9902293Z   Downloading PyYAML-6.0-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (596 kB)
+2022-01-08T03:10:00.0766033Z Collecting stevedore>=1.20.0
+2022-01-08T03:10:00.0902557Z   Downloading stevedore-3.5.0-py3-none-any.whl (49 kB)
+2022-01-08T03:10:00.1409748Z Collecting requests-toolbelt!=0.9.0,>=0.8.0
+2022-01-08T03:10:00.1529208Z   Downloading requests_toolbelt-0.9.1-py2.py3-none-any.whl (54 kB)
+2022-01-08T03:10:00.2018542Z Collecting readme-renderer>=21.0
+2022-01-08T03:10:00.2148445Z   Downloading readme_renderer-32.0-py3-none-any.whl (16 kB)
+2022-01-08T03:10:00.3525756Z Collecting tqdm>=4.14
+2022-01-08T03:10:00.3646072Z   Downloading tqdm-4.62.3-py2.py3-none-any.whl (76 kB)
+2022-01-08T03:10:00.4054929Z Collecting pkginfo>=1.8.1
+2022-01-08T03:10:00.4224265Z   Downloading pkginfo-1.8.2-py2.py3-none-any.whl (26 kB)
+2022-01-08T03:10:00.4708852Z Collecting colorama>=0.4.3
+2022-01-08T03:10:00.4824367Z   Downloading colorama-0.4.4-py2.py3-none-any.whl (16 kB)
+2022-01-08T03:10:00.5885648Z Collecting requests>=2.20
+2022-01-08T03:10:00.6004370Z   Downloading requests-2.27.1-py2.py3-none-any.whl (63 kB)
+2022-01-08T03:10:00.7193949Z Collecting keyring>=15.1
+2022-01-08T03:10:00.7326644Z   Downloading keyring-23.5.0-py3-none-any.whl (33 kB)
+2022-01-08T03:10:00.7683050Z Collecting rfc3986>=1.4.0
+2022-01-08T03:10:00.7801262Z   Downloading rfc3986-1.5.0-py2.py3-none-any.whl (31 kB)
+2022-01-08T03:10:00.8727208Z Collecting tomli
+2022-01-08T03:10:00.8863368Z   Downloading tomli-2.0.0-py3-none-any.whl (12 kB)
+2022-01-08T03:10:00.9338114Z Collecting gitdb<5,>=4.0.1
+2022-01-08T03:10:00.9465821Z   Downloading gitdb-4.0.9-py3-none-any.whl (63 kB)
+2022-01-08T03:10:00.9537112Z Requirement already satisfied: typing-extensions>=3.7.4.3 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from GitPython>=1.0.1->bandit->-r requirements-dev.txt (line 5)) (4.0.1)
+2022-01-08T03:10:00.9792026Z Requirement already satisfied: zipp>=0.5 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from importlib-metadata>=0.12->pytest->-r requirements-dev.txt (line 1)) (3.7.0)
+2022-01-08T03:10:01.0317295Z Collecting SecretStorage>=3.2
+2022-01-08T03:10:01.0443369Z   Downloading SecretStorage-3.3.1-py3-none-any.whl (15 kB)
+2022-01-08T03:10:01.0998337Z Collecting jeepney>=0.4.2
+2022-01-08T03:10:01.1153593Z   Downloading jeepney-0.7.1-py3-none-any.whl (54 kB)
+2022-01-08T03:10:01.2137947Z Collecting bleach>=2.1.0
+2022-01-08T03:10:01.2266938Z   Downloading bleach-4.1.0-py2.py3-none-any.whl (157 kB)
+2022-01-08T03:10:01.3030770Z Collecting Pygments>=2.5.1
+2022-01-08T03:10:01.3239236Z   Downloading Pygments-2.11.2-py3-none-any.whl (1.1 MB)
+2022-01-08T03:10:01.3945378Z Collecting docutils>=0.13.1
+2022-01-08T03:10:01.4078411Z   Downloading docutils-0.18.1-py2.py3-none-any.whl (570 kB)
+2022-01-08T03:10:01.4811155Z Collecting idna<4,>=2.5
+2022-01-08T03:10:01.4935268Z   Downloading idna-3.3-py3-none-any.whl (61 kB)
+2022-01-08T03:10:01.5747520Z Collecting urllib3<1.27,>=1.21.1
+2022-01-08T03:10:01.5880026Z   Downloading urllib3-1.26.8-py2.py3-none-any.whl (138 kB)
+2022-01-08T03:10:01.6419575Z Collecting charset-normalizer~=2.0.0
+2022-01-08T03:10:01.6560002Z   Downloading charset_normalizer-2.0.10-py3-none-any.whl (39 kB)
+2022-01-08T03:10:01.6617257Z Requirement already satisfied: certifi>=2017.4.17 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from requests>=2.20->twine->-r requirements-dev.txt (line 6)) (2021.10.8)
+2022-01-08T03:10:01.8001152Z Collecting pbr!=2.1.0,>=2.0.0
+2022-01-08T03:10:01.8152076Z   Downloading pbr-5.8.0-py2.py3-none-any.whl (112 kB)
+2022-01-08T03:10:01.9696535Z Collecting MarkupSafe>=0.9.2
+2022-01-08T03:10:01.9898141Z   Downloading MarkupSafe-2.0.1-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (31 kB)
+2022-01-08T03:10:02.1038562Z Collecting pyparsing!=3.0.5,>=2.0.2
+2022-01-08T03:10:02.1169476Z   Downloading pyparsing-3.0.6-py3-none-any.whl (97 kB)
+2022-01-08T03:10:02.1482942Z Requirement already satisfied: six>=1.11 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from parse-type->pytest-bdd->-r requirements-dev.txt (line 4)) (1.16.0)
+2022-01-08T03:10:02.2252220Z Collecting webencodings
+2022-01-08T03:10:02.2368124Z   Downloading webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+2022-01-08T03:10:02.3106759Z Collecting smmap<6,>=3.0.1
+2022-01-08T03:10:02.3226771Z   Downloading smmap-5.0.0-py3-none-any.whl (24 kB)
+2022-01-08T03:10:03.0725263Z Collecting cryptography>=2.0
+2022-01-08T03:10:03.0843499Z   Downloading cryptography-36.0.1-cp36-abi3-manylinux_2_24_x86_64.whl (3.6 MB)
+2022-01-08T03:10:03.6236157Z Collecting cffi>=1.12
+2022-01-08T03:10:03.6373619Z   Downloading cffi-1.15.0-cp37-cp37m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (427 kB)
+2022-01-08T03:10:03.7013569Z Collecting pycparser
+2022-01-08T03:10:03.7140971Z   Downloading pycparser-2.21-py2.py3-none-any.whl (118 kB)
+2022-01-08T03:10:03.7632098Z Using legacy 'setup.py install' for glob2, since package 'wheel' is not installed.
+2022-01-08T03:10:03.7634426Z Using legacy 'setup.py install' for parse, since package 'wheel' is not installed.
+2022-01-08T03:10:04.0464163Z Installing collected packages: pycparser, pyparsing, cffi, webencodings, urllib3, toml, smmap, py, pluggy, packaging, jeepney, iniconfig, idna, cryptography, charset-normalizer, attrs, tomli, SecretStorage, requests, pytest, Pygments, pbr, parse, MarkupSafe, gitdb, docutils, coverage, bleach, tqdm, stevedore, rfc3986, requests-toolbelt, readme-renderer, PyYAML, pytest-forked, pkginfo, parse-type, Mako, keyring, glob2, GitPython, execnet, colorama, wheel, twine, pytest-xdist, pytest-cov, pytest-bdd, bandit
+2022-01-08T03:10:06.0015190Z     Running setup.py install for parse: started
+2022-01-08T03:10:06.3191564Z     Running setup.py install for parse: finished with status 'done'
+2022-01-08T03:10:07.2746076Z     Running setup.py install for glob2: started
+2022-01-08T03:10:07.5437289Z     Running setup.py install for glob2: finished with status 'done'
+2022-01-08T03:10:07.9298451Z Successfully installed GitPython-3.1.25 Mako-1.1.6 MarkupSafe-2.0.1 PyYAML-6.0 Pygments-2.11.2 SecretStorage-3.3.1 attrs-21.4.0 bandit-1.7.1 bleach-4.1.0 cffi-1.15.0 charset-normalizer-2.0.10 colorama-0.4.4 coverage-6.2 cryptography-36.0.1 docutils-0.18.1 execnet-1.9.0 gitdb-4.0.9 glob2-0.7 idna-3.3 iniconfig-1.1.1 jeepney-0.7.1 keyring-23.5.0 packaging-21.3 parse-1.19.0 parse-type-0.5.2 pbr-5.8.0 pkginfo-1.8.2 pluggy-1.0.0 py-1.11.0 pycparser-2.21 pyparsing-3.0.6 pytest-6.2.5 pytest-bdd-5.0.0 pytest-cov-3.0.0 pytest-forked-1.4.0 pytest-xdist-2.5.0 readme-renderer-32.0 requests-2.27.1 requests-toolbelt-0.9.1 rfc3986-1.5.0 smmap-5.0.0 stevedore-3.5.0 toml-0.10.2 tomli-2.0.0 tqdm-4.62.3 twine-3.7.1 urllib3-1.26.8 webencodings-0.5.1 wheel-0.37.1
+2022-01-08T03:10:09.7966748Z Processing /home/runner/work/Cathay_SQA_Python/Cathay_SQA_Python
+2022-01-08T03:10:09.7972241Z   Preparing metadata (setup.py): started
+2022-01-08T03:10:10.0986827Z   Preparing metadata (setup.py): finished with status 'done'
+2022-01-08T03:10:10.1079907Z Building wheels for collected packages: python-ci-gitlab
+2022-01-08T03:10:10.1264362Z   Building wheel for python-ci-gitlab (setup.py): started
+2022-01-08T03:10:10.4128528Z   Building wheel for python-ci-gitlab (setup.py): finished with status 'done'
+2022-01-08T03:10:10.4136828Z   Created wheel for python-ci-gitlab: filename=python_ci_gitlab-1.0.0-py2.py3-none-any.whl size=4949 sha256=e5a06751b81058a27e71b3383d571caf9643e036d2d608d034756e834782d499
+2022-01-08T03:10:10.4139650Z   Stored in directory: /tmp/pip-ephem-wheel-cache-fhs48l3l/wheels/1d/2c/38/cbf64f9d378c25b219368dd470e2eaeaee47740667bc05ba2a
+2022-01-08T03:10:10.4173313Z Successfully built python-ci-gitlab
+2022-01-08T03:10:10.7294289Z Installing collected packages: python-ci-gitlab
+2022-01-08T03:10:10.7610021Z Successfully installed python-ci-gitlab-1.0.0
+2022-01-08T03:10:10.9330279Z ##[group]Run pip install pytest-github-actions-annotate-failures
+2022-01-08T03:10:10.9332238Z [36;1mpip install pytest-github-actions-annotate-failures[0m
+2022-01-08T03:10:10.9377053Z shell: /usr/bin/bash -e {0}
+2022-01-08T03:10:10.9377483Z env:
+2022-01-08T03:10:10.9378043Z   pythonLocation: /opt/hostedtoolcache/Python/3.7.12/x64
+2022-01-08T03:10:10.9378644Z ##[endgroup]
+2022-01-08T03:10:11.5630718Z Collecting pytest-github-actions-annotate-failures
+2022-01-08T03:10:11.6043567Z   Downloading pytest_github_actions_annotate_failures-0.1.6-py2.py3-none-any.whl (5.0 kB)
+2022-01-08T03:10:11.6115612Z Requirement already satisfied: pytest>=4.0.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest-github-actions-annotate-failures) (6.2.5)
+2022-01-08T03:10:11.6394230Z Requirement already satisfied: iniconfig in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest>=4.0.0->pytest-github-actions-annotate-failures) (1.1.1)
+2022-01-08T03:10:11.6405424Z Requirement already satisfied: importlib-metadata>=0.12 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest>=4.0.0->pytest-github-actions-annotate-failures) (4.10.0)
+2022-01-08T03:10:11.6411534Z Requirement already satisfied: pluggy<2.0,>=0.12 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest>=4.0.0->pytest-github-actions-annotate-failures) (1.0.0)
+2022-01-08T03:10:11.6415501Z Requirement already satisfied: packaging in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest>=4.0.0->pytest-github-actions-annotate-failures) (21.3)
+2022-01-08T03:10:11.6418267Z Requirement already satisfied: toml in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest>=4.0.0->pytest-github-actions-annotate-failures) (0.10.2)
+2022-01-08T03:10:11.6424557Z Requirement already satisfied: py>=1.8.2 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest>=4.0.0->pytest-github-actions-annotate-failures) (1.11.0)
+2022-01-08T03:10:11.6430413Z Requirement already satisfied: attrs>=19.2.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest>=4.0.0->pytest-github-actions-annotate-failures) (21.4.0)
+2022-01-08T03:10:11.6978920Z Requirement already satisfied: zipp>=0.5 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from importlib-metadata>=0.12->pytest>=4.0.0->pytest-github-actions-annotate-failures) (3.7.0)
+2022-01-08T03:10:11.6995675Z Requirement already satisfied: typing-extensions>=3.6.4 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from importlib-metadata>=0.12->pytest>=4.0.0->pytest-github-actions-annotate-failures) (4.0.1)
+2022-01-08T03:10:11.7096342Z Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from packaging->pytest>=4.0.0->pytest-github-actions-annotate-failures) (3.0.6)
+2022-01-08T03:10:11.9305088Z Installing collected packages: pytest-github-actions-annotate-failures
+2022-01-08T03:10:11.9556215Z Successfully installed pytest-github-actions-annotate-failures-0.1.6
+2022-01-08T03:10:12.1415560Z ##[group]Run pip install pytest
+2022-01-08T03:10:12.1416001Z [36;1mpip install pytest[0m
+2022-01-08T03:10:12.1416478Z [36;1mpytest -W ignore::DeprecationWarning -v[0m
+2022-01-08T03:10:12.1459073Z shell: /usr/bin/bash -e {0}
+2022-01-08T03:10:12.1459525Z env:
+2022-01-08T03:10:12.1460165Z   pythonLocation: /opt/hostedtoolcache/Python/3.7.12/x64
+2022-01-08T03:10:12.1460824Z ##[endgroup]
+2022-01-08T03:10:12.6756396Z Requirement already satisfied: pytest in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (6.2.5)
+2022-01-08T03:10:12.6926839Z Requirement already satisfied: attrs>=19.2.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest) (21.4.0)
+2022-01-08T03:10:12.6929226Z Requirement already satisfied: iniconfig in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest) (1.1.1)
+2022-01-08T03:10:12.6931522Z Requirement already satisfied: packaging in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest) (21.3)
+2022-01-08T03:10:12.7089213Z Requirement already satisfied: pluggy<2.0,>=0.12 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest) (1.0.0)
+2022-01-08T03:10:12.7094042Z Requirement already satisfied: py>=1.8.2 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest) (1.11.0)
+2022-01-08T03:10:12.7097039Z Requirement already satisfied: toml in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest) (0.10.2)
+2022-01-08T03:10:12.7113890Z Requirement already satisfied: importlib-metadata>=0.12 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest) (4.10.0)
+2022-01-08T03:10:12.7639522Z Requirement already satisfied: typing-extensions>=3.6.4 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from importlib-metadata>=0.12->pytest) (4.0.1)
+2022-01-08T03:10:12.7643826Z Requirement already satisfied: zipp>=0.5 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from importlib-metadata>=0.12->pytest) (3.7.0)
+2022-01-08T03:10:12.7736439Z Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from packaging->pytest) (3.0.6)
+2022-01-08T03:10:13.6549947Z ============================= test session starts ==============================
+2022-01-08T03:10:13.6551483Z platform linux -- Python 3.7.12, pytest-6.2.5, py-1.11.0, pluggy-1.0.0 -- /opt/hostedtoolcache/Python/3.7.12/x64/bin/python
+2022-01-08T03:10:13.6552256Z cachedir: .pytest_cache
+2022-01-08T03:10:13.6552908Z rootdir: /home/runner/work/Cathay_SQA_Python/Cathay_SQA_Python, configfile: pytest.ini
+2022-01-08T03:10:13.6554121Z plugins: bdd-5.0.0, forked-1.4.0, xdist-2.5.0, cov-3.0.0, github-actions-annotate-failures-0.1.6
+2022-01-08T03:10:13.7379464Z collecting ... collected 6 items
+2022-01-08T03:10:13.7380322Z 
+2022-01-08T03:10:13.7393145Z tests/Problem 1/test_core_Willy.py::TestCoreSuites::test_customer_deposit PASSED [ 16%]
+2022-01-08T03:10:13.7403934Z tests/Problem 1/test_core_Willy.py::TestCoreSuites::test_customer_withdraw_1st PASSED [ 33%]
+2022-01-08T03:10:13.7415696Z tests/Problem 1/test_core_Willy.py::TestCoreSuites::test_customer_add_interest PASSED [ 50%]
+2022-01-08T03:10:13.7832435Z tests/Problem 1/test_core_Willy.py::TestCoreSuites::test_customer_withdraw_2nd FAILED [ 66%]
+2022-01-08T03:10:14.3768537Z tests/Problem 2/test_scrape_Willy.py::test_scrape_1 PASSED               [ 83%]
+2022-01-08T03:10:14.9282279Z 
+2022-01-08T03:10:14.9283358Z tests/Problem 2/test_scrape_Willy.py::test_scrape_2 PASSED               [100%]
+2022-01-08T03:10:14.9283865Z 
+2022-01-08T03:10:14.9284300Z =================================== FAILURES ===================================
+2022-01-08T03:10:14.9285021Z __________________ TestCoreSuites.test_customer_withdraw_2nd ___________________
+2022-01-08T03:10:14.9285532Z 
+2022-01-08T03:10:14.9286161Z self = <test_core_Willy.TestCoreSuites object at 0x7fe271e85b90>
+2022-01-08T03:10:14.9286699Z 
+2022-01-08T03:10:14.9287432Z     def test_customer_withdraw_2nd(self):
+2022-01-08T03:10:14.9288088Z >       self.customer.withdraw(700)
+2022-01-08T03:10:14.9288522Z 
+2022-01-08T03:10:14.9289002Z tests/Problem 1/test_core_Willy.py:45: 
+2022-01-08T03:10:14.9289545Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+2022-01-08T03:10:14.9289861Z 
+2022-01-08T03:10:14.9290665Z self = <cathay.sample.customer.Customer object at 0x7fe271fd3dd0>, amount = 700
+2022-01-08T03:10:14.9291363Z 
+2022-01-08T03:10:14.9291835Z     def withdraw(self, amount):        # python 2
+2022-01-08T03:10:14.9292384Z         """withdraw money
+2022-01-08T03:10:14.9292785Z     
+2022-01-08T03:10:14.9293189Z         Parameters
+2022-01-08T03:10:14.9294192Z         ----------
+2022-01-08T03:10:14.9294620Z         amount: float
+2022-01-08T03:10:14.9295216Z             amount of money that the customer wants to withdraw
+2022-01-08T03:10:14.9295735Z     
+2022-01-08T03:10:14.9296110Z         Raises
+2022-01-08T03:10:14.9296625Z         ------
+2022-01-08T03:10:14.9297066Z         RuntimeError
+2022-01-08T03:10:14.9297651Z             if balance < amount
+2022-01-08T03:10:14.9298054Z         """
+2022-01-08T03:10:14.9298384Z     
+2022-01-08T03:10:14.9298790Z         if amount <= self.balance:
+2022-01-08T03:10:14.9308985Z ##[error]TestCoreSuites.test_customer_withdraw_2nd
+
+RuntimeError: balance not enough
+2022-01-08T03:10:14.9321697Z             self.balance -= Decimal(amount)
+2022-01-08T03:10:14.9322159Z         else:
+2022-01-08T03:10:14.9322961Z >           raise RuntimeError('balance not enough')
+2022-01-08T03:10:14.9323608Z E           RuntimeError: balance not enough
+2022-01-08T03:10:14.9323982Z 
+2022-01-08T03:10:14.9324469Z cathay/sample/customer.py:76: RuntimeError
+2022-01-08T03:10:14.9325085Z =========================== short test summary info ============================
+2022-01-08T03:10:14.9325961Z FAILED tests/Problem 1/test_core_Willy.py::TestCoreSuites::test_customer_withdraw_2nd
+2022-01-08T03:10:14.9326769Z ========================= 1 failed, 5 passed in 1.28s ==========================
+2022-01-08T03:10:14.9796712Z ##[error]Process completed with exit code 1.
+2022-01-08T03:10:14.9887549Z Post job cleanup.
+2022-01-08T03:10:15.1227463Z [command]/usr/bin/git version
+2022-01-08T03:10:15.1281694Z git version 2.34.1
+2022-01-08T03:10:15.1327403Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2022-01-08T03:10:15.1369767Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2022-01-08T03:10:15.1652472Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2022-01-08T03:10:15.1681935Z http.https://github.com/.extraheader
+2022-01-08T03:10:15.1694598Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2022-01-08T03:10:15.1734625Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2022-01-08T03:10:15.2050980Z Cleaning up orphan processes

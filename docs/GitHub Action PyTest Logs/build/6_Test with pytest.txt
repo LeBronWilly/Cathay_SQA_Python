@@ -1,0 +1,74 @@
+2022-01-08T03:10:12.1415546Z ##[group]Run pip install pytest
+2022-01-08T03:10:12.1415997Z [36;1mpip install pytest[0m
+2022-01-08T03:10:12.1416474Z [36;1mpytest -W ignore::DeprecationWarning -v[0m
+2022-01-08T03:10:12.1459057Z shell: /usr/bin/bash -e {0}
+2022-01-08T03:10:12.1459519Z env:
+2022-01-08T03:10:12.1460159Z   pythonLocation: /opt/hostedtoolcache/Python/3.7.12/x64
+2022-01-08T03:10:12.1460818Z ##[endgroup]
+2022-01-08T03:10:12.6756341Z Requirement already satisfied: pytest in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (6.2.5)
+2022-01-08T03:10:12.6926804Z Requirement already satisfied: attrs>=19.2.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest) (21.4.0)
+2022-01-08T03:10:12.6929213Z Requirement already satisfied: iniconfig in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest) (1.1.1)
+2022-01-08T03:10:12.6931395Z Requirement already satisfied: packaging in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest) (21.3)
+2022-01-08T03:10:12.7089174Z Requirement already satisfied: pluggy<2.0,>=0.12 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest) (1.0.0)
+2022-01-08T03:10:12.7094030Z Requirement already satisfied: py>=1.8.2 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest) (1.11.0)
+2022-01-08T03:10:12.7097028Z Requirement already satisfied: toml in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest) (0.10.2)
+2022-01-08T03:10:12.7113864Z Requirement already satisfied: importlib-metadata>=0.12 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest) (4.10.0)
+2022-01-08T03:10:12.7639469Z Requirement already satisfied: typing-extensions>=3.6.4 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from importlib-metadata>=0.12->pytest) (4.0.1)
+2022-01-08T03:10:12.7643771Z Requirement already satisfied: zipp>=0.5 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from importlib-metadata>=0.12->pytest) (3.7.0)
+2022-01-08T03:10:12.7736418Z Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from packaging->pytest) (3.0.6)
+2022-01-08T03:10:13.6549913Z ============================= test session starts ==============================
+2022-01-08T03:10:13.6551475Z platform linux -- Python 3.7.12, pytest-6.2.5, py-1.11.0, pluggy-1.0.0 -- /opt/hostedtoolcache/Python/3.7.12/x64/bin/python
+2022-01-08T03:10:13.6552234Z cachedir: .pytest_cache
+2022-01-08T03:10:13.6552902Z rootdir: /home/runner/work/Cathay_SQA_Python/Cathay_SQA_Python, configfile: pytest.ini
+2022-01-08T03:10:13.6554115Z plugins: bdd-5.0.0, forked-1.4.0, xdist-2.5.0, cov-3.0.0, github-actions-annotate-failures-0.1.6
+2022-01-08T03:10:13.7379375Z collecting ... collected 6 items
+2022-01-08T03:10:13.7380314Z 
+2022-01-08T03:10:13.7393117Z tests/Problem 1/test_core_Willy.py::TestCoreSuites::test_customer_deposit PASSED [ 16%]
+2022-01-08T03:10:13.7403874Z tests/Problem 1/test_core_Willy.py::TestCoreSuites::test_customer_withdraw_1st PASSED [ 33%]
+2022-01-08T03:10:13.7415673Z tests/Problem 1/test_core_Willy.py::TestCoreSuites::test_customer_add_interest PASSED [ 50%]
+2022-01-08T03:10:13.7832403Z tests/Problem 1/test_core_Willy.py::TestCoreSuites::test_customer_withdraw_2nd FAILED [ 66%]
+2022-01-08T03:10:14.3768472Z tests/Problem 2/test_scrape_Willy.py::test_scrape_1 PASSED               [ 83%]
+2022-01-08T03:10:14.9282218Z 
+2022-01-08T03:10:14.9283349Z tests/Problem 2/test_scrape_Willy.py::test_scrape_2 PASSED               [100%]
+2022-01-08T03:10:14.9283859Z 
+2022-01-08T03:10:14.9284294Z =================================== FAILURES ===================================
+2022-01-08T03:10:14.9285014Z __________________ TestCoreSuites.test_customer_withdraw_2nd ___________________
+2022-01-08T03:10:14.9285527Z 
+2022-01-08T03:10:14.9286155Z self = <test_core_Willy.TestCoreSuites object at 0x7fe271e85b90>
+2022-01-08T03:10:14.9286694Z 
+2022-01-08T03:10:14.9287176Z     def test_customer_withdraw_2nd(self):
+2022-01-08T03:10:14.9288082Z >       self.customer.withdraw(700)
+2022-01-08T03:10:14.9288517Z 
+2022-01-08T03:10:14.9288997Z tests/Problem 1/test_core_Willy.py:45: 
+2022-01-08T03:10:14.9289539Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+2022-01-08T03:10:14.9289856Z 
+2022-01-08T03:10:14.9290660Z self = <cathay.sample.customer.Customer object at 0x7fe271fd3dd0>, amount = 700
+2022-01-08T03:10:14.9291359Z 
+2022-01-08T03:10:14.9291829Z     def withdraw(self, amount):        # python 2
+2022-01-08T03:10:14.9292379Z         """withdraw money
+2022-01-08T03:10:14.9292780Z     
+2022-01-08T03:10:14.9293183Z         Parameters
+2022-01-08T03:10:14.9294185Z         ----------
+2022-01-08T03:10:14.9294614Z         amount: float
+2022-01-08T03:10:14.9295210Z             amount of money that the customer wants to withdraw
+2022-01-08T03:10:14.9295729Z     
+2022-01-08T03:10:14.9296105Z         Raises
+2022-01-08T03:10:14.9296614Z         ------
+2022-01-08T03:10:14.9297061Z         RuntimeError
+2022-01-08T03:10:14.9297645Z             if balance < amount
+2022-01-08T03:10:14.9298048Z         """
+2022-01-08T03:10:14.9298360Z     
+2022-01-08T03:10:14.9298785Z         if amount <= self.balance:
+2022-01-08T03:10:14.9308960Z ##[error]TestCoreSuites.test_customer_withdraw_2nd
+
+RuntimeError: balance not enough
+2022-01-08T03:10:14.9321674Z             self.balance -= Decimal(amount)
+2022-01-08T03:10:14.9322154Z         else:
+2022-01-08T03:10:14.9322955Z >           raise RuntimeError('balance not enough')
+2022-01-08T03:10:14.9323603Z E           RuntimeError: balance not enough
+2022-01-08T03:10:14.9323978Z 
+2022-01-08T03:10:14.9324464Z cathay/sample/customer.py:76: RuntimeError
+2022-01-08T03:10:14.9325081Z =========================== short test summary info ============================
+2022-01-08T03:10:14.9325955Z FAILED tests/Problem 1/test_core_Willy.py::TestCoreSuites::test_customer_withdraw_2nd
+2022-01-08T03:10:14.9326737Z ========================= 1 failed, 5 passed in 1.28s ==========================
+2022-01-08T03:10:14.9796682Z ##[error]Process completed with exit code 1.

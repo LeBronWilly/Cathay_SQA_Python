@@ -1,0 +1,141 @@
+2022-01-08T03:09:43.0909497Z ##[group]Run actions/checkout@v2
+2022-01-08T03:09:43.0910492Z with:
+2022-01-08T03:09:43.0911002Z   repository: LeBronWilly/Cathay_SQA_Python
+2022-01-08T03:09:43.0912006Z   token: ***
+2022-01-08T03:09:43.0912408Z   ssh-strict: true
+2022-01-08T03:09:43.0912942Z   persist-credentials: true
+2022-01-08T03:09:43.0913445Z   clean: true
+2022-01-08T03:09:43.0913844Z   fetch-depth: 1
+2022-01-08T03:09:43.0914251Z   lfs: false
+2022-01-08T03:09:43.0914648Z   submodules: false
+2022-01-08T03:09:43.0915074Z ##[endgroup]
+2022-01-08T03:09:43.3897750Z Syncing repository: LeBronWilly/Cathay_SQA_Python
+2022-01-08T03:09:43.3899452Z ##[group]Getting Git version info
+2022-01-08T03:09:43.3900648Z Working directory is '/home/runner/work/Cathay_SQA_Python/Cathay_SQA_Python'
+2022-01-08T03:09:43.3901966Z [command]/usr/bin/git version
+2022-01-08T03:09:43.4058981Z git version 2.34.1
+2022-01-08T03:09:43.9520118Z ##[endgroup]
+2022-01-08T03:09:43.9521548Z Deleting the contents of '/home/runner/work/Cathay_SQA_Python/Cathay_SQA_Python'
+2022-01-08T03:09:43.9524270Z ##[group]Initializing the repository
+2022-01-08T03:09:43.9525061Z [command]/usr/bin/git init /home/runner/work/Cathay_SQA_Python/Cathay_SQA_Python
+2022-01-08T03:09:43.9526198Z hint: Using 'master' as the name for the initial branch. This default branch name
+2022-01-08T03:09:43.9527101Z hint: is subject to change. To configure the initial branch name to use in all
+2022-01-08T03:09:43.9528068Z hint: of your new repositories, which will suppress this warning, call:
+2022-01-08T03:09:43.9529082Z hint: 
+2022-01-08T03:09:43.9530014Z hint: 	git config --global init.defaultBranch <name>
+2022-01-08T03:09:43.9530626Z hint: 
+2022-01-08T03:09:43.9531483Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2022-01-08T03:09:43.9532488Z hint: 'development'. The just-created branch can be renamed via this command:
+2022-01-08T03:09:43.9533112Z hint: 
+2022-01-08T03:09:43.9533632Z hint: 	git branch -m <name>
+2022-01-08T03:09:43.9534713Z Initialized empty Git repository in /home/runner/work/Cathay_SQA_Python/Cathay_SQA_Python/.git/
+2022-01-08T03:09:43.9535964Z [command]/usr/bin/git remote add origin https://github.com/LeBronWilly/Cathay_SQA_Python
+2022-01-08T03:09:43.9537353Z ##[endgroup]
+2022-01-08T03:09:43.9538501Z ##[group]Disabling automatic garbage collection
+2022-01-08T03:09:43.9539406Z [command]/usr/bin/git config --local gc.auto 0
+2022-01-08T03:09:43.9540498Z ##[endgroup]
+2022-01-08T03:09:43.9543267Z ##[group]Setting up auth
+2022-01-08T03:09:43.9544254Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2022-01-08T03:09:43.9545859Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2022-01-08T03:09:43.9547520Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2022-01-08T03:09:43.9549864Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2022-01-08T03:09:43.9551795Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2022-01-08T03:09:43.9553153Z ##[endgroup]
+2022-01-08T03:09:43.9554166Z ##[group]Fetching the repository
+2022-01-08T03:09:43.9555746Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +9f687cd34f0353f9955bba47e35c8e9dbb49b8de:refs/remotes/origin/main
+2022-01-08T03:09:43.9557062Z remote: Enumerating objects: 45, done.        
+2022-01-08T03:09:43.9557637Z remote: Counting objects:   2% (1/45)        
+2022-01-08T03:09:43.9558184Z remote: Counting objects:   4% (2/45)        
+2022-01-08T03:09:43.9558730Z remote: Counting objects:   6% (3/45)        
+2022-01-08T03:09:43.9559259Z remote: Counting objects:   8% (4/45)        
+2022-01-08T03:09:43.9559802Z remote: Counting objects:  11% (5/45)        
+2022-01-08T03:09:43.9560487Z remote: Counting objects:  13% (6/45)        
+2022-01-08T03:09:43.9561026Z remote: Counting objects:  15% (7/45)        
+2022-01-08T03:09:43.9561568Z remote: Counting objects:  17% (8/45)        
+2022-01-08T03:09:43.9562092Z remote: Counting objects:  20% (9/45)        
+2022-01-08T03:09:43.9562637Z remote: Counting objects:  22% (10/45)        
+2022-01-08T03:09:43.9563163Z remote: Counting objects:  24% (11/45)        
+2022-01-08T03:09:43.9563700Z remote: Counting objects:  26% (12/45)        
+2022-01-08T03:09:43.9564232Z remote: Counting objects:  28% (13/45)        
+2022-01-08T03:09:43.9564774Z remote: Counting objects:  31% (14/45)        
+2022-01-08T03:09:43.9565310Z remote: Counting objects:  33% (15/45)        
+2022-01-08T03:09:43.9569509Z remote: Counting objects:  35% (16/45)        
+2022-01-08T03:09:43.9570130Z remote: Counting objects:  37% (17/45)        
+2022-01-08T03:09:43.9570696Z remote: Counting objects:  40% (18/45)        
+2022-01-08T03:09:43.9571291Z remote: Counting objects:  42% (19/45)        
+2022-01-08T03:09:43.9571891Z remote: Counting objects:  44% (20/45)        
+2022-01-08T03:09:43.9572992Z remote: Counting objects:  46% (21/45)        
+2022-01-08T03:09:43.9573579Z remote: Counting objects:  48% (22/45)        
+2022-01-08T03:09:43.9574143Z remote: Counting objects:  51% (23/45)        
+2022-01-08T03:09:43.9574721Z remote: Counting objects:  53% (24/45)        
+2022-01-08T03:09:43.9575284Z remote: Counting objects:  55% (25/45)        
+2022-01-08T03:09:43.9575865Z remote: Counting objects:  57% (26/45)        
+2022-01-08T03:09:43.9576445Z remote: Counting objects:  60% (27/45)        
+2022-01-08T03:09:43.9577013Z remote: Counting objects:  62% (28/45)        
+2022-01-08T03:09:43.9577588Z remote: Counting objects:  64% (29/45)        
+2022-01-08T03:09:43.9578153Z remote: Counting objects:  66% (30/45)        
+2022-01-08T03:09:43.9578735Z remote: Counting objects:  68% (31/45)        
+2022-01-08T03:09:43.9579503Z remote: Counting objects:  71% (32/45)        
+2022-01-08T03:09:43.9580073Z remote: Counting objects:  73% (33/45)        
+2022-01-08T03:09:43.9580651Z remote: Counting objects:  75% (34/45)        
+2022-01-08T03:09:43.9581213Z remote: Counting objects:  77% (35/45)        
+2022-01-08T03:09:43.9581993Z remote: Counting objects:  80% (36/45)        
+2022-01-08T03:09:43.9582582Z remote: Counting objects:  82% (37/45)        
+2022-01-08T03:09:43.9583144Z remote: Counting objects:  84% (38/45)        
+2022-01-08T03:09:43.9583719Z remote: Counting objects:  86% (39/45)        
+2022-01-08T03:09:43.9584301Z remote: Counting objects:  88% (40/45)        
+2022-01-08T03:09:43.9584913Z remote: Counting objects:  91% (41/45)        
+2022-01-08T03:09:43.9585500Z remote: Counting objects:  93% (42/45)        
+2022-01-08T03:09:43.9586069Z remote: Counting objects:  95% (43/45)        
+2022-01-08T03:09:43.9586646Z remote: Counting objects:  97% (44/45)        
+2022-01-08T03:09:43.9587211Z remote: Counting objects: 100% (45/45)        
+2022-01-08T03:09:43.9587828Z remote: Counting objects: 100% (45/45), done.        
+2022-01-08T03:09:43.9588483Z remote: Compressing objects:   2% (1/35)        
+2022-01-08T03:09:43.9589106Z remote: Compressing objects:   5% (2/35)        
+2022-01-08T03:09:43.9590055Z remote: Compressing objects:   8% (3/35)        
+2022-01-08T03:09:43.9590681Z remote: Compressing objects:  11% (4/35)        
+2022-01-08T03:09:43.9591311Z remote: Compressing objects:  14% (5/35)        
+2022-01-08T03:09:43.9591949Z remote: Compressing objects:  17% (6/35)        
+2022-01-08T03:09:43.9592565Z remote: Compressing objects:  20% (7/35)        
+2022-01-08T03:09:43.9593202Z remote: Compressing objects:  22% (8/35)        
+2022-01-08T03:09:43.9593817Z remote: Compressing objects:  25% (9/35)        
+2022-01-08T03:09:43.9594451Z remote: Compressing objects:  28% (10/35)        
+2022-01-08T03:09:43.9595072Z remote: Compressing objects:  31% (11/35)        
+2022-01-08T03:09:43.9595709Z remote: Compressing objects:  34% (12/35)        
+2022-01-08T03:09:43.9596352Z remote: Compressing objects:  37% (13/35)        
+2022-01-08T03:09:43.9597105Z remote: Compressing objects:  40% (14/35)        
+2022-01-08T03:09:43.9597738Z remote: Compressing objects:  42% (15/35)        
+2022-01-08T03:09:43.9598354Z remote: Compressing objects:  45% (16/35)        
+2022-01-08T03:09:43.9598989Z remote: Compressing objects:  48% (17/35)        
+2022-01-08T03:09:43.9599618Z remote: Compressing objects:  51% (18/35)        
+2022-01-08T03:09:43.9600237Z remote: Compressing objects:  54% (19/35)        
+2022-01-08T03:09:43.9600871Z remote: Compressing objects:  57% (20/35)        
+2022-01-08T03:09:43.9601484Z remote: Compressing objects:  60% (21/35)        
+2022-01-08T03:09:43.9602107Z remote: Compressing objects:  62% (22/35)        
+2022-01-08T03:09:43.9602720Z remote: Compressing objects:  65% (23/35)        
+2022-01-08T03:09:43.9603343Z remote: Compressing objects:  68% (24/35)        
+2022-01-08T03:09:43.9603969Z remote: Compressing objects:  71% (25/35)        
+2022-01-08T03:09:43.9604592Z remote: Compressing objects:  74% (26/35)        
+2022-01-08T03:09:43.9605230Z remote: Compressing objects:  77% (27/35)        
+2022-01-08T03:09:43.9605845Z remote: Compressing objects:  80% (28/35)        
+2022-01-08T03:09:43.9609426Z remote: Compressing objects:  82% (29/35)        
+2022-01-08T03:09:43.9610150Z remote: Compressing objects:  85% (30/35)        
+2022-01-08T03:09:43.9610766Z remote: Compressing objects:  88% (31/35)        
+2022-01-08T03:09:43.9611397Z remote: Compressing objects:  91% (32/35)        
+2022-01-08T03:09:43.9612013Z remote: Compressing objects:  94% (33/35)        
+2022-01-08T03:09:43.9612644Z remote: Compressing objects:  97% (34/35)        
+2022-01-08T03:09:43.9613256Z remote: Compressing objects: 100% (35/35)        
+2022-01-08T03:09:43.9613915Z remote: Compressing objects: 100% (35/35), done.        
+2022-01-08T03:09:43.9615105Z remote: Total 45 (delta 5), reused 28 (delta 1), pack-reused 0        
+2022-01-08T03:09:43.9623745Z From https://github.com/LeBronWilly/Cathay_SQA_Python
+2022-01-08T03:09:43.9625755Z  * [new ref]         9f687cd34f0353f9955bba47e35c8e9dbb49b8de -> origin/main
+2022-01-08T03:09:43.9678833Z ##[endgroup]
+2022-01-08T03:09:43.9680037Z ##[group]Determining the checkout info
+2022-01-08T03:09:43.9681226Z ##[endgroup]
+2022-01-08T03:09:43.9682256Z ##[group]Checking out the ref
+2022-01-08T03:09:43.9683553Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2022-01-08T03:09:43.9774577Z Switched to a new branch 'main'
+2022-01-08T03:09:43.9776272Z Branch 'main' set up to track remote branch 'main' from 'origin'.
+2022-01-08T03:09:43.9778484Z ##[endgroup]
+2022-01-08T03:09:43.9811956Z [command]/usr/bin/git log -1 --format='%H'
+2022-01-08T03:09:43.9847773Z '9f687cd34f0353f9955bba47e35c8e9dbb49b8de'

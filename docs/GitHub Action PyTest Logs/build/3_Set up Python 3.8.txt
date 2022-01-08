@@ -1,0 +1,6 @@
+2022-01-08T03:09:44.0046101Z ##[group]Run actions/setup-python@v1
+2022-01-08T03:09:44.0046663Z with:
+2022-01-08T03:09:44.0047154Z   python-version: 3.7
+2022-01-08T03:09:44.0047655Z   architecture: x64
+2022-01-08T03:09:44.0049124Z ##[endgroup]
+2022-01-08T03:09:44.0629042Z Successfully setup CPython (3.7.12)

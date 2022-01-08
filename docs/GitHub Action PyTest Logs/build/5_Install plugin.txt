@@ -1,0 +1,21 @@
+2022-01-08T03:10:10.9330255Z ##[group]Run pip install pytest-github-actions-annotate-failures
+2022-01-08T03:10:10.9332232Z [36;1mpip install pytest-github-actions-annotate-failures[0m
+2022-01-08T03:10:10.9377040Z shell: /usr/bin/bash -e {0}
+2022-01-08T03:10:10.9377478Z env:
+2022-01-08T03:10:10.9378037Z   pythonLocation: /opt/hostedtoolcache/Python/3.7.12/x64
+2022-01-08T03:10:10.9378639Z ##[endgroup]
+2022-01-08T03:10:11.5630675Z Collecting pytest-github-actions-annotate-failures
+2022-01-08T03:10:11.6043506Z   Downloading pytest_github_actions_annotate_failures-0.1.6-py2.py3-none-any.whl (5.0 kB)
+2022-01-08T03:10:11.6115584Z Requirement already satisfied: pytest>=4.0.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest-github-actions-annotate-failures) (6.2.5)
+2022-01-08T03:10:11.6394175Z Requirement already satisfied: iniconfig in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest>=4.0.0->pytest-github-actions-annotate-failures) (1.1.1)
+2022-01-08T03:10:11.6405251Z Requirement already satisfied: importlib-metadata>=0.12 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest>=4.0.0->pytest-github-actions-annotate-failures) (4.10.0)
+2022-01-08T03:10:11.6411523Z Requirement already satisfied: pluggy<2.0,>=0.12 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest>=4.0.0->pytest-github-actions-annotate-failures) (1.0.0)
+2022-01-08T03:10:11.6415492Z Requirement already satisfied: packaging in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest>=4.0.0->pytest-github-actions-annotate-failures) (21.3)
+2022-01-08T03:10:11.6418258Z Requirement already satisfied: toml in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest>=4.0.0->pytest-github-actions-annotate-failures) (0.10.2)
+2022-01-08T03:10:11.6424540Z Requirement already satisfied: py>=1.8.2 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest>=4.0.0->pytest-github-actions-annotate-failures) (1.11.0)
+2022-01-08T03:10:11.6430402Z Requirement already satisfied: attrs>=19.2.0 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from pytest>=4.0.0->pytest-github-actions-annotate-failures) (21.4.0)
+2022-01-08T03:10:11.6978872Z Requirement already satisfied: zipp>=0.5 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from importlib-metadata>=0.12->pytest>=4.0.0->pytest-github-actions-annotate-failures) (3.7.0)
+2022-01-08T03:10:11.6995634Z Requirement already satisfied: typing-extensions>=3.6.4 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from importlib-metadata>=0.12->pytest>=4.0.0->pytest-github-actions-annotate-failures) (4.0.1)
+2022-01-08T03:10:11.7096280Z Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in /opt/hostedtoolcache/Python/3.7.12/x64/lib/python3.7/site-packages (from packaging->pytest>=4.0.0->pytest-github-actions-annotate-failures) (3.0.6)
+2022-01-08T03:10:11.9305022Z Installing collected packages: pytest-github-actions-annotate-failures
+2022-01-08T03:10:11.9556159Z Successfully installed pytest-github-actions-annotate-failures-0.1.6
