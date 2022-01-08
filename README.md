@@ -14,6 +14,11 @@ https://github.com/LeBronWilly/Cathay_SQA_Python/tree/main/tests/Problem%202
 1. Test Case1：使用 Python 抓取 https://cathay-ds-test.s3-ap-northeast-1.amazonaws.com/user_info?userid=A123456789 ，並利用 assert 確認 http response status code 為 200
 2. Test Case2：使用 Python 抓取 https://cathay-ds-test.s3-ap-northeast-1.amazonaws.com/company_info?companyid=1 ，並利用 assert 確認 http response status code 為 403
 
+## Bonus
+https://github.com/LeBronWilly/Cathay_SQA_Python/tree/main/.github/workflows
+<br>
+請運用GitHub Actions或其他CI Services自動執行測試
+
 ## Run Pytest
 ```Command Line Interface
 cls
@@ -22,6 +27,12 @@ cd D:\GitHub\Cathay_SQA_Python
 pytest -W ignore::DeprecationWarning -v
 
 ```
+
+## Some Docs
+https://github.com/LeBronWilly/Cathay_SQA_Python/tree/main/docs
+1. 題目的PPT檔(Take-home-exam.pptx)
+2. 結果截圖的Word檔(Solutions.docx)
+3. GitHub Actions執行完的Logs
 
 ## Some References
 1. https://myapollo.com.tw/zh-tw/pytest/
@@ -39,3 +50,8 @@ pytest -W ignore::DeprecationWarning -v
 13. https://stackoverflow.com/questions/55944961/python-403-access-denied-when-post-request
 14. https://ithelp.ithome.com.tw/articles/10191165
 15. https://www.learncodewithmike.com/2020/09/7-tips-to-avoid-getting-blocked-while-scraping.html
+16. https://stackoverflow.com/questions/60298449/github-action-with-pytest
+17. https://www.linkedin.com/pulse/test-automation-how-build-cicd-pipeline-using-pytest-nir-tal/
+18. https://kknews.cc/zh-tw/code/zr5km6a.html
+19. https://blog.dennisokeeffe.com/blog/2021-08-08-pytest-with-github-actions
+20. https://iter01.com/608520.html
