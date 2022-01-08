@@ -39,3 +39,5 @@ pytest -W ignore::DeprecationWarning -v
 13. https://stackoverflow.com/questions/55944961/python-403-access-denied-when-post-request
 14. https://ithelp.ithome.com.tw/articles/10191165
 15. https://www.learncodewithmike.com/2020/09/7-tips-to-avoid-getting-blocked-while-scraping.html
+16. https://stackoverflow.com/questions/60298449/github-action-with-pytest
+17. https://www.linkedin.com/pulse/test-automation-how-build-cicd-pipeline-using-pytest-nir-tal/
